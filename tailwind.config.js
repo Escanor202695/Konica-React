@@ -20,7 +20,7 @@ module.exports = {
         themeBlue:'#114461',
         themeGreen:'#62c157',
         themeWhite:'#eef9ff',
-
+        themeDarkBlue:"#021432",
       },
     },
   },

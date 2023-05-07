@@ -77,19 +77,18 @@ const ContactForm = () => {
     <div className="w-[100vw] px-6 py-16 md:py-[8rem]">
       <div className="flex flex-col md:flex-row justify-center max-w-[70rem] mx-auto">
         <div className="w-full md:w-1/2 mb-12 md:pr-[2rem]">
-          <h2 className="text-[3rem] font-bold mb-6">Get In Touch</h2>
-          <p className="text-sm mb-4 hidden md:block">
-            Contact us today to discuss your project requirements, learn more
-            about our services, and discover how Crantech LLC can empower your
-            business with top-tier remote software engineering talent.
+          <h2 className="text-[3rem] font-bold">Get In Touch</h2>
+          <p className="text-sm mb-10 hidden md:block">
+            Contact us today to discuss your requirements, learn more
+            about our services.
           </p>
-          <h3 className="text-xl">Email</h3>
+          <h3 className="text-xl font-semibold">Email</h3>
           <div className="flex items-center mb-4">
             <HiOutlineMail className="mr-2 text-themeGreen text-2xl" />
             <p className="text-gray-700 mb-0">info@konicacorporation.com</p>
           </div>
 
-          <h3 className="text-xl">Address</h3>
+          <h3 className="text-xl font-semibold">Address</h3>
           <div className="flex items-center mb-4">
             <HiOutlineLocationMarker className="mr-2 text-themeGreen text-[40px] md:text-2xl" />
             <p className="text-gray-700 mb-0 ">
