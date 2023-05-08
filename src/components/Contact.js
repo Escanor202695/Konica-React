@@ -74,10 +74,10 @@ const ContactForm = () => {
   }, [show]);
 
   return (
-    <div className="w-[100vw] px-6 py-16 md:py-[8rem]">
+    <div className="w-[100vw] px-6 py-16 md:py-[120px]">
       <div className="flex flex-col md:flex-row justify-center max-w-[70rem] mx-auto">
         <div className="w-full md:w-1/2 mb-12 md:pr-[2rem]">
-          <h2 className="text-[3rem] font-bold">Get In Touch</h2>
+          <h2 className="text-[3rem] font-bold text-themeBlue">Get In Touch</h2>
           <p className="text-sm mb-10 hidden md:block">
             Contact us today to discuss your requirements, learn more
             about our services.
@@ -127,17 +127,6 @@ const ContactForm = () => {
                 name="phone"
                 placeholder="Phone Number"
                 value={formData.phone}
-                onChange={handleInputChange}
-                className="border rounded-lg py-2 px-3 w-full"
-                required
-              />
-            </div>
-            <div className="mb-4">
-              <input
-                type="text"
-                name="company"
-                placeholder="Company Name"
-                value={formData.company}
                 onChange={handleInputChange}
                 className="border rounded-lg py-2 px-3 w-full"
                 required
