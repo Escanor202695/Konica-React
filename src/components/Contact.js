@@ -1,13 +1,9 @@
 import React, { useState, useEffect } from "react";
-import {
-  HiOutlineMail,
-  HiOutlinePhone,
-  HiOutlineLocationMarker,
-} from "react-icons/hi";
-import { TextField, Button } from "@material-ui/core";
+import { HiOutlineMail, HiOutlineLocationMarker } from "react-icons/hi";
 import axios from "axios";
 import { Modal } from "react-bootstrap";
 import Alert from "react-bootstrap/Alert";
+import CallIcon from "@mui/icons-material/Call";
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -74,26 +70,39 @@ const ContactForm = () => {
   }, [show]);
 
   return (
-    <div className="w-[100vw] px-6 py-16 md:py-[120px]">
+    <div
+      className="w-[100vw] px-6 py-16 md:py-[60px] md:py-[120px]"
+      id="contact"
+    >
       <div className="flex flex-col md:flex-row justify-center max-w-[70rem] mx-auto">
         <div className="w-full md:w-1/2 mb-12 md:pr-[2rem]">
           <h2 className="text-[3rem] font-bold text-themeBlue">Get In Touch</h2>
           <p className="text-sm mb-10 hidden md:block">
-            Contact us today to discuss your requirements, learn more
-            about our services.
+            Contact us today to discuss your requirements, learn more about our
+            services.
           </p>
-          <h3 className="text-xl font-semibold">Email</h3>
+          <h3 className="text-xl font-semibold text-themeBlue mb-2 mt-2">
+            Email
+          </h3>
           <div className="flex items-center mb-4">
             <HiOutlineMail className="mr-2 text-themeGreen text-2xl" />
             <p className="text-gray-700 mb-0">info@konicacorporation.com</p>
           </div>
-
-          <h3 className="text-xl font-semibold">Address</h3>
+          <h3 className="text-xl font-semibold text-themeBlue mb-2">Phone</h3>
           <div className="flex items-center mb-4">
-            <HiOutlineLocationMarker className="mr-2 text-themeGreen text-[40px] md:text-2xl" />
-            <p className="text-gray-700 mb-0 ">
-              Dhaka, Bangladesh
-            </p>
+            <CallIcon className="mr-2 text-themeGreen text-2xl" />
+            <div>
+              <p className="text-gray-700 mb-0">+01517310359</p>
+              <p className="text-gray-700 mb-0">+01517310359</p>
+            </div>
+          </div>
+
+          <h3 className="text-xl font-semibold text-themeBlue mb-2">Address</h3>
+          <div className="flex items-center mb-4">
+            <HiOutlineLocationMarker className="mr-2 text-themeGreen text-2xl" />
+            <div>
+              <p className="text-gray-700 mb-0 ">Dhaka, Bangladesh</p>
+            </div>
           </div>
         </div>
 
@@ -145,7 +154,7 @@ const ContactForm = () => {
             <button
               type="submit"
               onClick={handleSubmit}
-              className="bg-themeBlue border-2 border-transparent  hover:border-themeGreen text-white font-bold py-2 px-4 rounded"
+              className="bg-themeBlue border-2 border-transparent  hover:border-themeGreen text-white font-bold py-2 px-6 rounded"
             >
               Submit
             </button>

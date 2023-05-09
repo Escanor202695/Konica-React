@@ -1,7 +1,7 @@
 import { useState } from "react";
-import { Link } from "react-scroll";
 import { MdClose } from "react-icons/md";
 import { FiMenu } from "react-icons/fi";
+import ScrollIntoView from "react-scroll-into-view";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,80 +12,92 @@ const Header = () => {
 
   const menu = [
     {
-      title: "clients",
+      title: "about",
+    },
+    {
+      title: "services",
+    },
+    {
+      title: "products",
     },
     {
       title: "clients",
     },
     {
-      title: "clients",
-    },
-    {
-      title: "clients",
+      title: "contact",
     },
   ];
 
+  const onClick = () => {
+    console.log("clicked");
+  };
+
   return (
-    <div className="w-screen bg-transparent">
-      <div className="flex justify-between items-center py-4 max-w-[1140px] mx-auto bg-transparent">
+    <div className="absolute top-0 left-0 w-screen bg-transparent z-50">
+      <div className="flex justify-between items-center py-4 max-w-[1140px] mx-auto bg-transparent px-[20px] md:px-0">
         <div className="flex items-center">
-          <Link
-            to="top"
+          <ScrollIntoView
+            selector="contact"
             smooth={true}
             duration={500}
             className="flex items-center gap-5"
           >
-            <img src="/img/white-logo.png" alt="Logo" className=" w-16 h-16" />
-
-            <span className="text-2xl font-bold text-themeWhite">
+            <img src="/img/white-logo.png" alt="Logo" className="w-16 h-16" />
+            <p className="text-2xl font-bold text-themeWhite">
               <span className="text-themeGreen">K</span>onica{" "}
+              <br className="block mx:hidden" />
               <span className="text-themeGreen">C</span>orporation
-            </span>
-          </Link>
+            </p>
+          </ScrollIntoView>
         </div>
         <div className="hidden md:flex items-center">
           <nav className="hidden md:flex space-x-8 font-semibold ml-8 mr-6">
-            {menu.map((menu, idx) => (
-              <Link to="about" smooth={true} duration={500} key={idx}>
-                <p className="text-themeWhite hover:text-themeGreen capitalize">
-                  {menu.title}
+            {menu.map((item, idx) => (
+              <ScrollIntoView
+                selector={`#${item.title}`}
+                smooth={true}
+                duration={500}
+                key={idx}
+              >
+                <p className="text-themeWhite hover:text-themeGreen capitalize cursor-pointer menuLine">
+                  {item.title!=='contact' && item.title}
                 </p>
-              </Link>
+              </ScrollIntoView>
             ))}
           </nav>
-          <Link to="contact" smooth={true} duration={500}>
+          <ScrollIntoView selector="contact" smooth={true} duration={500}>
             <button className="px-4 py-2 rounded-md text-white bg-themeGreen hover:bg-themeDarkBlue">
               Contact Us
             </button>
-          </Link>
+          </ScrollIntoView>
         </div>
-        <div className="md:hidden">
+        <div className="md:hidden z-40">
           <button onClick={toggleMenu}>
             {isOpen ? (
-              <MdClose className="h-6 w-6 text-gray-700" />
+              <MdClose className="text-themeBlue text-xl" />
             ) : (
-              <FiMenu className="h-6 w-6 text-gray-700" />
+              <FiMenu className="text-themeWhite text-3xl " />
             )}
           </button>
         </div>
         <div
           className={`${
             isOpen ? "block" : "hidden"
-          } md:hidden absolute top-0 right-0 h-auto w-[10rem] bg-gray-100`}
+          } md:hidden absolute top-6 right-2 h-auto w-[10rem] bg-gray-100`}
         >
-          <nav className="mt-16 px-8 space-y-4">
-            <Link to="top" smooth={true} duration={500}>
-              <p className="text-gray-700 hover:text-gray-900">Home</p>
-            </Link>
-            <Link to="about" smooth={true} duration={500}>
-              <p className="text-gray-700 hover:text-gray-900">About</p>
-            </Link>
-            <Link to="services" smooth={true} duration={500}>
-              <p className="text-gray-700 hover:text-gray-900">Services</p>
-            </Link>
-            <Link to="contact" smooth={true} duration={500}>
-              <p className="text-gray-700 hover:text-gray-900">Contact</p>
-            </Link>
+          <nav className="px-6 space-y-4 py-8">
+            {menu.map((item, idx) => (
+              <ScrollIntoView
+                selector={`#${item.title}`}
+                smooth={true}
+                duration={500}
+                key={idx}
+              >
+                <p className="text-themeBlue hover:text-themeGreen capitalize cursor-pointer">
+                  {item.title}
+                </p>
+              </ScrollIntoView>
+            ))}
           </nav>
         </div>
       </div>
