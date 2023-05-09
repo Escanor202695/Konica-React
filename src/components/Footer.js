@@ -19,7 +19,7 @@ function Footer(props) {
     },
   ];
   return (
-    <div className="w-screen bg-gradient-to-tr from-black to-themeBlue px-[20px] h-[950px]">
+    <div className="w-screen bg-gradient-to-tr from-black to-themeBlue px-[20px] h-[950px] md:h-auto">
       <div className="max-w-[1140px] mx-auto py-[80px] flex flex-col md:flex-row justify-around">
         <div>
           <img
@@ -34,7 +34,7 @@ function Footer(props) {
           </div>
           <p className="text-gray-400">All rights reserved by Konica Corporation Limited, 2023</p>
         </div>
-        <div className="my-10">
+        <div className="my-10 md:my-0">
           <h2 className="text-white text-3xl">Contacts</h2>
           <div className="mt-2">
             <p className="flex gap-2 my-4 items-center">

@@ -1,4 +1,5 @@
 import React from "react";
+import ScrollIntoView from "react-scroll-into-view";
 
 function Hero(props) {
   return (
@@ -14,9 +15,15 @@ function Hero(props) {
             <h2 className="text-4xl md:text-4xl lg:text-5xl text-themeWhite md:w-[500px] mb-6">
               We Sell Best Quality Pharmacy Products
             </h2>
-            <button className="border-2  border-themeGreen py-2 px-2 md:py-2 md:px-8 rounded-md text-themeGreen hover:text-white hover:bg-themeGreen">
-              Know More
-            </button>
+            <ScrollIntoView
+              selector='services'
+              smooth={true}
+              duration={500}
+            >
+              <button className="border-2  border-themeGreen py-2 px-2 md:py-2 md:px-8 rounded-md text-themeGreen hover:text-white hover:bg-themeGreen">
+                Know More
+              </button>
+            </ScrollIntoView>
           </div>
           <img
             src="/img/about.jpg"
