@@ -20,7 +20,7 @@ function Footer(props) {
   ];
   return (
     <div className="w-screen bg-gradient-to-tr from-black to-themeBlue px-[20px] h-[950px] md:h-auto">
-      <div className="max-w-[1140px] mx-auto py-[80px] flex flex-col md:flex-row justify-around">
+      <div className="max-w-[1140px] mx-auto py-[80px] md:py-[100px] flex flex-col md:flex-row justify-around">
         <div>
           <img
             src="/img/white-logo.png"
