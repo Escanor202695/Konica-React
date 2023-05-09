@@ -35,7 +35,7 @@ const ProductCard = ({ title, imageSrc }) => {
   return (
     <div className="w-full max-w-[1140px] md:w-1/4 px-[20px] md:px-[10px] ">
       <div className="rounded-lg p-6">
-        <img src={imageSrc} alt="Product" className="w-full h-auto mb-4" />
+        <img src={imageSrc} alt="Product" className="w-full h-auto mb-4 rounded-md" />
         <h3 className="text-xl font-semibold mb-2 text-themeBlue">{title}</h3>
       </div>
     </div>

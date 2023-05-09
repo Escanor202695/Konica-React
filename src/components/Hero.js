@@ -16,7 +16,7 @@ function Hero(props) {
               We Sell Best Quality Pharmacy Products
             </h2>
             <ScrollIntoView
-              selector='services'
+              selector='#services'
               smooth={true}
               duration={500}
             >

@@ -28,27 +28,18 @@ const Header = () => {
     },
   ];
 
-  const onClick = () => {
-    console.log("clicked");
-  };
-
   return (
     <div className="absolute top-0 left-0 w-screen bg-transparent z-50">
       <div className="flex justify-between items-center py-4 max-w-[1140px] mx-auto bg-transparent px-[20px] md:px-0">
-        <div className="flex items-center">
-          <ScrollIntoView
-            selector="contact"
-            smooth={true}
-            duration={500}
-            className="flex items-center gap-5"
-          >
-            <img src="/img/white-logo.png" alt="Logo" className="w-16 h-16" />
+        <div className="flex transform scale-90">
+  
+            <img src="/img/white-logo.png" alt="Logo" className="w-16 h-16 mr-4" />
             <p className="text-2xl font-bold text-themeWhite">
               <span className="text-themeGreen">K</span>onica{" "}
               <br className="block mx:hidden" />
               <span className="text-themeGreen">C</span>orporation
             </p>
-          </ScrollIntoView>
+
         </div>
         <div className="hidden md:flex items-center">
           <nav className="hidden md:flex space-x-8 font-semibold ml-8 mr-6">
@@ -65,7 +56,7 @@ const Header = () => {
               </ScrollIntoView>
             ))}
           </nav>
-          <ScrollIntoView selector="contact" smooth={true} duration={500}>
+          <ScrollIntoView selector="#contact" smooth={true} duration={500}>
             <button className="px-4 py-2 rounded-md text-white bg-themeGreen hover:bg-themeDarkBlue">
               Contact Us
             </button>

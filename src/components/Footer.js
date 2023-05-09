@@ -35,7 +35,7 @@ function Footer(props) {
           <p className="text-gray-400">All rights reserved by Konica Corporation Limited, 2023</p>
         </div>
         <div className="my-10 md:my-0">
-          <h2 className="text-white text-3xl">Contacts</h2>
+          <h2 className="text-white text-3xl">Contact</h2>
           <div className="mt-2">
             <p className="flex gap-2 my-4 items-center">
               <HiOutlineMail className="text-themeGreen text-[20px]" />
