@@ -1,29 +1,19 @@
-
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import './App.css';
-import Header from './components/Header';
-import Footer from './components/Footer';
-import Contact from './components/Contact';
-import Hero from './components/Hero';
-import About from './components/About';
-import { useEffect } from 'react';
-import Clients from './components/Clients';
-import Services from './components/Services';
-import Products from './components/Products';
-
+import Homepage from "./components/Homepage";
+import AboutDetails from "./components/pages/AboutDetails";
+import Raw from "./components/pages/Raw";
 function App() {
-
   return (
-    <div className="relative">
-        <Header/>
-      <Hero/>
-      <About/>
-      <Services/>
-      <Products/>
-      <Clients/>
-      <Contact/>
-      <Footer/>
-    </div>
+    <>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Homepage/>} />
+          <Route path="/about" element={<AboutDetails/>} />
+          <Route path="/raw" element={<Raw/>}/>
+        </Routes>
+      </BrowserRouter>
+    </>
   );
 }
-
 export default App;

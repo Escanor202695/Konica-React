@@ -53,8 +53,8 @@ const ContactForm = () => {
           <div className="flex items-center mb-4">
             <CallIcon className="mr-2 text-themeGreen text-2xl" />
             <div>
-              <p className="text-gray-600 mb-0">+01517310359</p>
-              <p className="text-gray-600 mb-0">+01517310359</p>
+              <p className="text-gray-600 mb-0">+88-01716 161730</p>
+              <p className="text-gray-600 mb-0">+88-01715 617463</p>
             </div>
           </div>
 
@@ -62,7 +62,9 @@ const ContactForm = () => {
           <div className="flex items-center mb-4">
             <HiOutlineLocationMarker className="mr-2 text-themeGreen text-2xl" />
             <div>
-              <p className="text-gray-600 mb-0 ">Dhaka, Bangladesh</p>
+              <p className="text-gray-600 mb-0 ">House-18, Road-4<br/>
+              Block-B, Ajmeribag<br/>
+              Fatulla, Narayanganj-1400, Bangladesh</p>
             </div>
           </div>
         </div>
