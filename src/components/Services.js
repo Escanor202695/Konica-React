@@ -22,6 +22,26 @@ const ServiceCard = ({ title, description, imageSrc }) => {
 };
 
 const Services = () => {
+  const services = [
+    {
+      title: "Raw Material",
+      description:
+        "ASN Corporation believes that we are successful only when our customer and suppliers are successful. We will realize this mission ",
+      imageSrc: "/img/about.jpg",
+    },
+    {
+      title: "Packaging Material",
+      description:
+        "Packaging is the technology of enclosing or protecting products for distribution, storage, sale and use. Packaging also refers to the process of ",
+      imageSrc: "/img/about.jpg",
+    },
+    {
+      title: "Machinery",
+      description:
+        "Through many years of being in Service for Pharmaceutical and Food Industry, ASN has acquired good experience and resources to provide solution in every respect",
+      imageSrc: "/img/about.jpg",
+    },
+  ];
   return (
     <div className=" py-[60px] md:py-[120px] w-screen relative" id="services">
       <div className="absolute top-0 left-0 w-full h-full  md:bg-gradient-to-tr from-black to-themeBlue -z-10 opacity-90"></div>
@@ -33,23 +53,16 @@ const Services = () => {
       <h2 className="text-[3rem] font-semibold text-themeBlue md:text-themeWhite text-center mb-[50px]">
         <span className="line">Services</span>
       </h2>
-      <div className="max-w-[1140px] flex flex-wrap items-center justify-between  mx-auto ">
+      <div className="max-w-[1140px] flex flex-wrap items-center justify-between mx-auto">
+      {services.map((service, index) => (
         <ServiceCard
-          title="Service 1"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce malesuada lacus nec tristique porta."
-          imageSrc="/img/about.jpg"
+          key={index}
+          title={service.title}
+          description={service.description}
+          imageSrc={service.imageSrc}
         />
-        <ServiceCard
-          title="Service 2"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce malesuada lacus nec tristique porta."
-          imageSrc="/img/about.jpg"
-        />
-        <ServiceCard
-          title="Service 3"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce malesuada lacus nec tristique porta."
-          imageSrc="/img/about.jpg"
-        />
-      </div>
+      ))}
+    </div>
     </div>
   );
 };

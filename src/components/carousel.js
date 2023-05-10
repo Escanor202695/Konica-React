@@ -6,49 +6,49 @@ import { Pagination, Navigation, Autoplay } from "swiper";
 
 export default function Slider() {
   const clients = [
-    "ACME Laboratories Limited",
-    "Advanced Chemical Industries (ACI) Limited",
-    "Alco Pharma Limited",
-    "Aristopharma Limited",
-    "Ambee Pharmaceuticals Limited",
-    "Amico Laboratories Limited",
-    "Apollo Pharmaceutical Limited",
-    "Astra Biopharmaceuticals Limited",
-    "Active Fine Chemicals",
-    "Apex Pharma Limited",
-    "Beacon Pharmaceuticals Limited",
-    "Beximco Pharmaceuticals Limited",
-    "Bio Pharmaceuticals Limited",
-    "Eskayef Bangladesh Limited (SK+F)",
-    "General Pharmaceuticals Limited",
-    "Globe Pharmaceuticals Limited",
-    "Gonoshasthaya Pharmaceuticals Limited",
-    "Healthcare Pharmaceuticals Limited",
-    "Incepta Pharmaceuticals Limited",
-    "Innova Pharmaceuticals Limited",
-    "Jayson Pharmaceuticals Ltd.",
-    "Kemiko Pharmaceuticals Limited",
-    "Labaid Pharmaceuticals Limited",
-    "Navana Pharmaceuticals Limited",
-    "Novo Healthcare & Pharma Ltd",
-    "Nipa Pharmaceuticals Limited",
-    "NIPRO JMI Pharma Limited",
-    "Opsonin Pharma Limited",
-    "Organic Health Care Limited",
-    "Orion Pharma Limited",
-    "Popular Pharmaceuticals Limited",
-    "Pharmasia Limited",
-    "Radiant Pharmaceuticals Limited",
-    "RAK Pharmaceuticals Ltd",
-    "Renata Limited",
-    "Sanofi Aventis Bangladesh Ltd",
-    "Somatec Pharmaceuticals Ltd",
-    "Sharif Pharmaceuticals Limited",
-    "SQUARE Pharmaceuticals Limited",
-    "Techno Drugs Limited",
-    "The Ibn Sina Pharmaceuticals Limited",
-    "Ziska Pharmaceuticals Limited",
-  ];
+    { name: "ACME Laboratories Limited", image: "/img/customers/acme.jpeg" },
+    { name: "Advanced Chemical Industries (ACI) Limited", image: "/img/customers/aci.jpeg" },
+    { name: "Alco Pharma Limited", image: "/img/customers/alco.png" },
+    { name: "Aristopharma Limited", image: "/img/customers/aristopharma.jpeg" },
+    { name: "Ambee Pharmaceuticals Limited", image: "/img/customers/ambee.jpeg" },
+    { name: "Amico Laboratories Limited", image: "/img/customers/amico.jpeg" },
+    { name: "Apollo Pharmaceutical Limited", image: "/img/customers/apollo.jpeg" },
+    { name: "Astra Biopharmaceuticals Limited", image: "/img/customers/astra.jpeg" },
+    { name: "Active Fine Chemicals", image: "/img/customers/astra.png" },
+    { name: "Apex Pharma Limited", image: "/img/customers/apex.png" },
+    { name: "Beacon Pharmaceuticals Limited", image: "/img/customers/beacon.png" },
+    { name: "Beximco Pharmaceuticals Limited", image: "/img/customers/beximco.png" },
+    { name: "Bio Pharmaceuticals Limited", image: "/img/customers/bio.png" },
+    { name: "Eskayef Bangladesh Limited (SK+F)", image: "/img/customers/eskayef.png" },
+    { name: "General Pharmaceuticals Limited", image: "/img/customers/general.png" },
+    { name: "Globe Pharmaceuticals Limited", image: "/img/customers/globe.jpeg" },
+    { name: "Gonoshasthaya Pharmaceuticals Limited", image: "/img/customers/gonoshasthaya.png" },
+    { name: "Healthcare Pharmaceuticals Limited", image: "/img/customers/healthcare.jpeg" },
+    { name: "Incepta Pharmaceuticals Limited", image: "/img/customers/incepta.jpeg" },
+    { name: "Innova Pharmaceuticals Limited", image: "/img/customers/innova.jpeg" },
+    { name: "Jayson Pharmaceuticals Ltd.", image: "/img/customers/jayson.jpeg" },
+    { name: "Kemiko Pharmaceuticals Limited", image: "/img/customers/kemiko.jpeg" },
+    { name: "Labaid Pharmaceuticals Limited", image: "/img/customers/labaid.jpeg" },
+    { name: "Navana Pharmaceuticals Limited", image: "/img/customers/navana.jpeg" },
+    { name: "Novo Healthcare & Pharma Ltd", image: "/img/customers/novo.jpeg" },
+    { name: "Nipa Pharmaceuticals Limited", image: "/img/customers/nipa.jpeg" },
+    { name: "NIPRO JMI Pharma Limited", image: "/img/customers/nipro.jpeg" },
+    { name: "Opsonin Pharma Limited", image: "/img/customers/opsonin.png" },
+    { name: "Organic Health Care Limited", image: "/img/customers/organic.jpeg" },
+    { name: "Orion Pharma Limited", image: "/img/customers/orion.jpeg" },
+    { name: "Popular Pharmaceuticals Limited", image: "/img/customers/popular.jpeg" },
+    { name: "Pharmasia Limited", image: "/img/customers/pharmasia.png" },
+    { name: "Radiant Pharmaceuticals Limited", image: "/img/customers/radiant.png" },
+    { name: "RAK Pharmaceuticals Ltd", image: "/img/customers/rak.png" },
+    { name: "Renata Limited", image: "/img/customers/renata.jpeg" },
+    { name: "Sanofi Aventis Bangladesh Ltd", image: "/img/customers/sanofi.png" },
+    { name: "Somatec Pharmaceuticals Ltd", image: "/img/customers/somatec.png" },
+    { name: "Sharif Pharmaceuticals Limited", image: "/img/customers/sharif.jpeg" },
+    { name: "SQUARE Pharmaceuticals Limited", image: "/img/customers/square.png" },
+    { name: "Techno Drugs Limited", image: "/img/customers/techno.png" },
+    { name: "The Ibn Sina Pharmaceuticals Limited", image: "/img/customers/ibnsina.png" },
+    { name: "Ziska Pharmaceuticals Limited", image: "/img/customers/ziska.png" },
+  ]  
 
   return (
     <>
@@ -75,14 +75,15 @@ export default function Slider() {
       >
         {clients.map((i, idx) => (
           <SwiperSlide
-            className=" font-semibold px-[20px] md:px-[40px]"
+            className=" font-semibold px-[20px] md:px-[40px] "
             key={idx}
           >
-            <img
-              src="/img/blue-logo.png"
-              alt={i}
-              className="mx-auto"
-            />
+          <img
+            src={i.image}
+            alt={i}
+            className="mx-auto h-16 mb-3 "
+          />
+          <h3 className="text-white text-center">{i.name}</h3>
           </SwiperSlide>
         ))}
       </Swiper>

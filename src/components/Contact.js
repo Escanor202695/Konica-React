@@ -4,71 +4,32 @@ import axios from "axios";
 import { Modal } from "react-bootstrap";
 import Alert from "react-bootstrap/Alert";
 import CallIcon from "@mui/icons-material/Call";
-
+import emailjs from "@emailjs/browser";
+import { useRef } from "react";
 const ContactForm = () => {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    phone: "",
-    company: "",
-    inquiry: "",
-  });
-  const [show, setShow] = useState(false);
-  const [error, setError] = useState(false);
+  const form = useRef();
 
-  const handleInputChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prevData) => ({ ...prevData, [name]: value }));
-  };
+  function sendEmail(e) {
+    e.preventDefault();
 
-  const handleSubmit = async (event) => {
-    event.preventDefault();
-    try {
-      const { name, email, phone, company, inquiry } = formData;
-      const text = `Phone: ${phone}\n\nCompany: ${company}\n\nInquiry:\n${inquiry}`;
-
-      if (
-        name === "" ||
-        email === "" ||
-        phone === "" ||
-        company === "" ||
-        inquiry === ""
-      ) {
-        setError(true);
-        setShow(true);
-        return;
-      }
-
-      await axios.post("https://api.crantechllc.com/email/send", {
-        name,
-        text,
-        email,
-      });
-
-      // handle successful form submission
-      setShow(true);
-      setFormData({
-        name: "",
-        email: "",
-        phone: "",
-        company: "",
-        inquiry: "",
-      });
-    } catch (error) {
-      // handle error in form submission
-      setError(true);
-      setShow(true);
-    }
-  };
-
-  useEffect(() => {
-    if (show) {
-      setTimeout(() => {
-        setShow(false);
-      }, 1500);
-    }
-  }, [show]);
-
+    emailjs
+      .sendForm(
+        "service_c7un0zs",
+        "template_9zpfuz6",
+        form.current,
+        "L9SMMWhHwwVVXCwWJ"
+      )
+      .then(
+        (result) => {
+          if (result) {
+            alert("thanks for your message");
+          }
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  }
   return (
     <div
       className="w-[100vw] px-6 py-[60px] md:py-[120px] md:pt-[150px]"
@@ -92,8 +53,8 @@ const ContactForm = () => {
           <div className="flex items-center mb-4">
             <CallIcon className="mr-2 text-themeGreen text-2xl" />
             <div>
-              <p className="text-gray-600 mb-0">+01517310359</p>
-              <p className="text-gray-600 mb-0">+01517310359</p>
+              <p className="text-gray-600 mb-0">+88-01716 161730</p>
+              <p className="text-gray-600 mb-0">+88-01715 617463</p>
             </div>
           </div>
 
@@ -101,59 +62,53 @@ const ContactForm = () => {
           <div className="flex items-center mb-4">
             <HiOutlineLocationMarker className="mr-2 text-themeGreen text-2xl" />
             <div>
-              <p className="text-gray-600 mb-0 ">Dhaka, Bangladesh</p>
+              <p className="text-gray-600 mb-0 ">House-18, Road-4<br/>
+              Block-B, Ajmeribag<br/>
+              Fatulla, Narayanganj-1400, Bangladesh</p>
             </div>
           </div>
         </div>
 
         <div className="w-full md:w-1/2 mx-auto">
-          <form onSubmit={handleSubmit} id="form" noValidate>
-            <div className="mb-4">
+          <form ref={form}>
+            
               <input
                 type="text"
                 name="name"
                 placeholder="Full Name"
-                value={formData.name}
-                onChange={handleInputChange}
-                className="border rounded-lg py-2 px-3 w-full"
+                className="border mb-4  rounded-lg py-2 px-3 w-full"
                 required
               />
-            </div>
-            <div className="mb-4">
+            
+            
               <input
                 type="email"
                 name="email"
                 placeholder="Email"
-                value={formData.email}
-                onChange={handleInputChange}
-                className="border rounded-lg py-2 px-3 w-full"
+                className="border mb-4 rounded-lg py-2 px-3 w-full"
                 required
               />
-            </div>
-            <div className="mb-4">
+            
+            
               <input
                 type="text"
                 name="phone"
                 placeholder="Phone Number"
-                value={formData.phone}
-                onChange={handleInputChange}
-                className="border rounded-lg py-2 px-3 w-full"
+                className="border mb-4 rounded-lg py-2 px-3 w-full"
                 required
               />
-            </div>
-            <div className="mb-4">
+            
+            
               <textarea
                 name="inquiry"
                 placeholder="Project Details/Inquiry"
-                value={formData.inquiry}
-                onChange={handleInputChange}
-                className="border rounded-lg py-2 px-3 w-full h-32 resize-none"
+                className="border mb-4 rounded-lg py-2 px-3 w-full h-32 resize-none"
                 required
               />
-            </div>
+            
             <button
               type="submit"
-              onClick={handleSubmit}
+              onClick={sendEmail}
               className="bg-themeBlue border-2 border-transparent  hover:border-themeGreen text-white font-bold py-2 px-6 rounded"
             >
               Submit
@@ -161,6 +116,8 @@ const ContactForm = () => {
           </form>
         </div>
       </div>
+      {/*
+    
       <Modal show={show}>
         <Modal.Header>
           <Modal.Title className="text-themeGreen">
@@ -172,6 +129,7 @@ const ContactForm = () => {
             "Complete all the fields, please."}
         </Modal.Body>
       </Modal>
+    */}
     </div>
   );
 };

@@ -18,6 +18,7 @@ function Footer(props) {
       title: "clients",
     },
   ];
+  const currentYear = new Date().getFullYear();
   return (
     <div className="w-screen bg-gradient-to-tr from-black to-themeBlue px-[20px] h-[950px] md:h-auto">
       <div className="max-w-[1140px] mx-auto py-[80px] md:py-[100px] flex flex-col md:flex-row justify-around">
@@ -32,22 +33,26 @@ function Footer(props) {
             <span className="text-themeGreen">K</span>onica{" "}
             <span className="text-themeGreen">C</span>orporation
           </div>
-          <p className="text-gray-400">All rights reserved by Konica Corporation Limited, 2023</p>
+          <p className="text-gray-400">All rights reserved by Konica Corporation Limited, {currentYear}</p>
         </div>
         <div className="my-10 md:my-0">
           <h2 className="text-white text-3xl">Contact</h2>
           <div className="mt-2">
             <p className="flex gap-2 my-4 items-center">
               <HiOutlineMail className="text-themeGreen text-[20px]" />
-              <span className="text-themeWhite">sakib@gmail.com</span>
+              <span className="text-themeWhite">info@konicacorporation.com</span>
             </p>
             <p className="flex gap-2 my-4">
               <LocalPhoneIcon className="text-themeGreen text-[20px]" />
-              <span className="text-themeWhite">+01812311888</span>
+              <span className="text-themeWhite">+88-01716 161730,<br/> +88-01715 617463
+              </span>
             </p>
             <p className="flex gap-2 my-4">
               <HiOutlineLocationMarker className="text-themeGreen text-[20px]" />
-              <span className="text-themeWhite">sakib@gmail.com</span>
+              <span className="text-themeWhite">House-18, Road-4 <br/>
+              Block-B, Ajmeribag <br/> 
+              Fatulla, Narayanganj-1400, Bangladesh 
+              </span>
             </p>
           </div>
         </div>
