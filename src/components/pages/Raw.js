@@ -5,31 +5,188 @@ import ServiceHeader from "./ServiceHeader";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
+import CheckIcon from "@mui/icons-material/Check";
 
-function ListItem({ text, isActive, onClick }) {
+import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
+
+function ProductCategory() {
+  const [activeIndex, setActiveIndex] = useState(null);
+
+  const arrayCategory = [
+    {
+      name: "category 1",
+      products: [
+        "product 1",
+        "product 1",
+        "product 1",
+        "product 1",
+        "product 1",
+        "product 1",
+        "product 1",
+        "product 1",
+        "product 1",
+        "product 1",
+        "product 1",
+        "product 1",
+        "product 1",
+        "product 1",
+        "product 1",
+        "product 1",
+        "product 1",
+        "product 1",
+        "product 1",
+        "product 1",
+        "product 1",
+        "product 1",
+        "product 1",
+        "product 1",
+        "product 1",
+        "product 1",
+        "product 1",
+        "product 1",
+        "product 1",
+        "product 1",
+        "product 1",
+        "product 1",
+        "product 1",
+        "product 1",
+        "product 1",
+        "product 1",
+        "product 1",
+        "product 1",
+        "product 1",
+        "product 1",
+        "product 1",
+        "product 1",
+        "product 1",
+        "product 1",
+      ],
+    },
+    {
+      name: "category 1",
+      products: [
+        "product 1",
+        "product 1",
+        "product 1",
+        "product 1",
+        "product 1",
+        "product 1",
+        "product 1",
+        "product 1",
+        "product 1",
+        "product 1",
+        "product 1",
+      ],
+    },
+    {
+      name: "category 1",
+      products: [
+        "product 1",
+        "product 1",
+        "product 1",
+        "product 1",
+        "product 1",
+        "product 1",
+        "product 1",
+        "product 1",
+        "product 1",
+        "product 1",
+        "product 1",
+      ],
+    },
+    {
+      name: "category 1",
+      products: [
+        "product 1",
+        "product 1",
+        "product 1",
+        "product 1",
+        "product 1",
+        "product 1",
+        "product 1",
+        "product 1",
+        "product 1",
+        "product 1",
+        "product 1",
+      ],
+    },
+    {
+      name: "category 1",
+      products: [
+        "product 1",
+        "product 1",
+        "product 1",
+        "product 1",
+        "product 1",
+        "product 1",
+        "product 1",
+        "product 1",
+        "product 1",
+        "product 1",
+        "product 1",
+      ],
+    },
+  ];
+
   return (
-    <li
-      className={`flex items-center ${isActive ? "text-green-500" : ""}`}
-      onClick={onClick}
-    >
-      <FontAwesomeIcon icon={faAngleRight} className="mr-2" />
-      {text}
-    </li>
+    <div className="bg-lightGray">
+      <div className="max-w-[1140px] mx-auto ">
+        <div className="divide-y divide-gray-200">
+          {arrayCategory.map((item, index) => (
+            <div className="">
+              <div
+                key={index}
+                className={`pt-4 px-4  bg-white border-b-[.5px] overflow-hidden`}
+                onClick={() =>
+                  setActiveIndex(activeIndex === index ? null : index)
+                }
+              >
+                <button
+                  type="button"
+                  className="flex justify-between items-center w-full text-left"
+                >
+                  <span
+                    className={`text-lg md:text-lg font-medium capitalize ${
+                      activeIndex === index
+                        ? "text-themeGreen"
+                        : "text-themeBlue"
+                    }`}
+                  >
+                    {item.name}
+                  </span>
+                  <KeyboardArrowUpIcon
+                    className={`w-6 h-6 transform transition-transform ${
+                      activeIndex === index
+                        ? "rotate-180 text-themeGreen"
+                        : "text-themeBlue"
+                    }`}
+                  />
+                </button>
+                <div
+                  className={`mt-4 gap-x-[100px] transition-all ease-in-out duration-[500ms] text-left ml-4 ${
+                    activeIndex === index
+                      ? "max-h-[800px]"
+                      : "max-h-0 overflow-hidden"
+                  }`}
+                >
+                  <ul className="pb-[20px] flex flex-wrap ">
+                    {item.products.map((i, idx) => (
+                      <li className="text-md text-gray-700 py-[6px] mb-0 md:ml-4 min-w-[30%] ">
+                        <CheckIcon className="mr-2 text-themeGreen"/>
+                        {i}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
   );
 }
 function Raw() {
-  const [activeIndex, setActiveIndex] = useState(-1);
-
-  const handleClick = (index) => {
-    setActiveIndex(index === activeIndex ? -1 : index);
-  };
-  const lists = [
-    ["Item 1", "Item 2", "Item 3"],
-    ["Item 4", "Item 5", "Item 6"],
-    ["Item 7", "Item 8", "Item 9"],
-    ["Item 10", "Item 11", "Item 12"],
-    ["Item 13", "Item 14", "Item 15"],
-  ];
   return (
     <>
       <ServiceHeader />
@@ -40,13 +197,7 @@ function Raw() {
           className="w-full h-full absolute top-0 left-0 -z-20"
         />
         <div className="w-screen relative -z-10 bg-gradient-to-t from-black to-themeBlue opacity-90  md:px-0 ">
-          <div className="max-w-[1140px] h-[400px] flex flex-col md:flex-row items-center justify-center md:justify-between  mx-auto w-full  px-[20px] md:px-0">
-            <div className="w-[80%] mb-5 ">
-              <h2 className="text-3xl  md:text-4xl lg:text-5xl text-themeWhite mb-6">
-                Raw Material
-              </h2>
-            </div>
-          </div>
+          <div className="max-w-[1140px] h-[400px] flex flex-col md:flex-row items-center justify-center md:justify-between  mx-auto w-full  px-[20px] md:px-0"></div>
         </div>
         <div className="custom-shape-divider-bottom-1683382367">
           <svg
@@ -67,9 +218,9 @@ function Raw() {
         <h2 className="text-[3rem] font-semibold text-themeBlue text-center mb-[50px] ">
           <span className="line">Raw Material</span>
         </h2>
-        <div className="max-w-[1140px] mx-auto  flex flex-col-reverse md:flex-row ">
+        <div className="max-w-[70rem] mx-auto  flex flex-col-reverse md:flex-row ">
           <div className="w-full  lg:ml-[30px] flex-col px-[20px]">
-            <p className="mb-[30px] mt-[10px] md:mt-0">
+            <p className="mb-[30px] mt-[10px] md:mt-0 text-center">
               <span className="font-semibold text-themeGreen">
                 Konica Corporation Limited
               </span>{" "}
@@ -80,27 +231,7 @@ function Raw() {
               understand customers’ requirement and offer the best possible
               solution by ensuring quality and service
               <br /> <br />
-              <span className="font-semibold text-themeGreen">
-                Raw Materials ::{" "}
-              </span>
-              <ul className="list-disc">
-                {lists.map((list, index) => (
-                  <React.Fragment key={index}>
-                    <ListItem
-                      text={`List ${index + 1}`}
-                      isActive={index === activeIndex}
-                      onClick={() => handleClick(index)}
-                    />
-                    {index === activeIndex && (
-                      <ul className="list-disc ml-4">
-                        {list.map((item, itemIndex) => (
-                          <li key={itemIndex}>{item}</li>
-                        ))}
-                      </ul>
-                    )}
-                  </React.Fragment>
-                ))}
-              </ul>
+              <ProductCategory />
             </p>
           </div>
         </div>

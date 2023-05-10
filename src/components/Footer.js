@@ -39,17 +39,17 @@ function Footer(props) {
           <h2 className="text-white text-3xl">Contact</h2>
           <div className="mt-2">
             <p className="flex gap-2 my-4 items-center">
-              <HiOutlineMail className="text-themeGreen text-[20px]" />
+              <HiOutlineMail className="text-themeGreen text-[22px]" />
               <span className="text-themeWhite">info@konicacorporation.com</span>
             </p>
             <p className="flex gap-2 my-4">
               <LocalPhoneIcon className="text-themeGreen text-[20px]" />
-              <span className="text-themeWhite">+88-01716 161730,<br/> +88-01715 617463
+              <span className="text-themeWhite">+88-01716 161730<br/> +88-01715 617463
               </span>
             </p>
             <p className="flex gap-2 my-4">
               <HiOutlineLocationMarker className="text-themeGreen text-[20px]" />
-              <span className="text-themeWhite">House-18, Road-4 <br/>
+              <span className="text-themeWhite">House-18, Road-4,
               Block-B, Ajmeribag <br/> 
               Fatulla, Narayanganj-1400, Bangladesh 
               </span>

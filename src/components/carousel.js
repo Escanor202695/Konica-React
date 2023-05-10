@@ -81,7 +81,7 @@ export default function Slider() {
           <img
             src={i.image}
             alt={i}
-            className="mx-auto h-16 mb-3 "
+            className="mx-auto h-[10rem] mb-3"
           />
           <h3 className="text-white text-center">{i.name}</h3>
           </SwiperSlide>

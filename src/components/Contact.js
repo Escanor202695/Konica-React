@@ -38,10 +38,7 @@ const ContactForm = () => {
       <div className="flex flex-col md:flex-row justify-center max-w-[70rem] mx-auto">
         <div className="w-full md:w-1/2 mb-12 md:pr-[2rem]">
           <h2 className="text-[3rem] font-bold text-themeBlue">Get In Touch</h2>
-          <p className="text-md mb-10 hidden md:block text-gray-600">
-            Contact us today to discuss your requirements, learn more about our
-            services.
-          </p>
+          
           <h3 className="text-xl font-semibold text-themeBlue mb-2 mt-2">
             Email
           </h3>
@@ -62,8 +59,8 @@ const ContactForm = () => {
           <div className="flex items-center mb-4">
             <HiOutlineLocationMarker className="mr-2 text-themeGreen text-2xl" />
             <div>
-              <p className="text-gray-600 mb-0 ">House-18, Road-4<br/>
-              Block-B, Ajmeribag<br/>
+              <p className="text-gray-600 mb-0 ">House-18, Road-4,
+               Block-B, Ajmeribag<br/>
               Fatulla, Narayanganj-1400, Bangladesh</p>
             </div>
           </div>
