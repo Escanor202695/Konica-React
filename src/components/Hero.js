@@ -11,7 +11,7 @@ function Hero(props) {
       />
       <div className="w-screen relative -z-10 bg-gradient-to-t from-black to-themeBlue opacity-90  md:px-0 ">
         <div className="max-w-[1140px] h-[750px] flex flex-col md:flex-row items-center justify-center md:justify-between  mx-auto w-full  px-[20px] md:px-0">
-          <div className="md:w-[50%] mb-5 ">
+          <div className="md:w-[50%] mb-5 " data-aos="fade-right" data-aos-duration="750">
             <h2 className="text-4xl md:text-4xl lg:text-5xl text-themeWhite md:w-[500px] mb-6">
               We indent best quality pharmaceutical raw materials
             </h2>
@@ -25,6 +25,8 @@ function Hero(props) {
             src="/img/hero3.jpg"
             alt="heroImage"
             className="w-full md:w-[30rem] rounded-md h-auto md:h-[20rem] mt-6 md:mt-0 "
+            data-aos="fade-left"
+            data-aos-duration="750"
           />
         </div>
       </div>
