@@ -5,7 +5,15 @@ import AboutDetails from "./components/pages/AboutDetails";
 import Raw from "./components/pages/Raw";
 import Packaging from './components/pages/Packaging';
 import Machinery from './components/pages/Machinery';
+import { ToastContainer, toast } from "react-toastify";
+import { useEffect } from "react";
+import AOS from 'aos';
+import "aos/dist/aos.css";
+
 function App() {
+  useEffect(()=>{
+    AOS.init();
+  })
   return (
     <>
       <BrowserRouter>
@@ -17,6 +25,7 @@ function App() {
           <Route path="/raw-material" element={<Raw/>}/>
         </Routes>
       </BrowserRouter>
+      <ToastContainer />
     </>
   );
 }

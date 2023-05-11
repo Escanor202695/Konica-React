@@ -3,7 +3,7 @@ import { HiOutlineMail, HiOutlineLocationMarker } from "react-icons/hi";
 import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
 import ScrollIntoView from "react-scroll-into-view";
 
-function Footer(props) {
+function Footer({ home = false }) {
   const menu = [
     {
       title: "about",
@@ -33,48 +33,56 @@ function Footer(props) {
             <span className="text-themeGreen">K</span>onica{" "}
             <span className="text-themeGreen">C</span>orporation
           </div>
-          <p className="text-gray-400">All rights reserved by Konica Corporation Limited, {currentYear}</p>
+          <p className="text-gray-400">
+            All rights reserved by Konica Corporation Limited, {currentYear}
+          </p>
         </div>
         <div className="my-10 md:my-0">
           <h2 className="text-white text-3xl">Contact</h2>
           <div className="mt-2">
             <p className="flex gap-2 my-4 items-center">
               <HiOutlineMail className="text-themeGreen text-[22px]" />
-              <span className="text-themeWhite">info@konicacorporation.com</span>
+              <span className="text-themeWhite">
+                info@konicacorporation.com
+              </span>
             </p>
             <p className="flex gap-2 my-4">
               <LocalPhoneIcon className="text-themeGreen text-[20px]" />
-              <span className="text-themeWhite">+88-01716 161730<br/> +88-01715 617463
+              <span className="text-themeWhite">
+                +88-01716 161730
+                <br /> +88-01715 617463
               </span>
             </p>
             <p className="flex gap-2 my-4">
               <HiOutlineLocationMarker className="text-themeGreen text-[20px]" />
-              <span className="text-themeWhite">House-18, Road-4,
-              Block-B, Ajmeribag <br/> 
-              Fatulla, Narayanganj-1400, Bangladesh 
+              <span className="text-themeWhite">
+                House-18, Road-4, Block-B, Ajmeribag <br />
+                Fatulla, Narayanganj-1400, Bangladesh
               </span>
             </p>
           </div>
         </div>
-        <div className="">
-          <h2 className="text-white text-3xl">Company</h2>
-          <div className="mt-2">
-            <nav className="flex flex-col font-semibold">
-              {menu.map((item, idx) => (
-                <ScrollIntoView
-                  selector={`#${item.title}`}
-                  smooth={true}
-                  duration={500}
-                  key={idx}
-                >
-                  <p className="text-themeWhite hover:text-themeGreen capitalize cursor-pointer my-1 font-normal">
-                    {item.title}
-                  </p>
-                </ScrollIntoView>
-              ))}
-            </nav>
+        {home && (
+          <div className="">
+            <h2 className="text-white text-3xl">Company</h2>
+            <div className="mt-2">
+              <nav className="flex flex-col font-semibold">
+                {menu.map((item, idx) => (
+                  <ScrollIntoView
+                    selector={`#${item.title}`}
+                    smooth={true}
+                    duration={500}
+                    key={idx}
+                  >
+                    <p className="text-themeWhite hover:text-themeGreen capitalize cursor-pointer my-1 font-normal">
+                      {item.title}
+                    </p>
+                  </ScrollIntoView>
+                ))}
+              </nav>
+            </div>
           </div>
-        </div>
+        )}
       </div>
     </div>
   );

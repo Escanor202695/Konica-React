@@ -33,7 +33,7 @@ const products = [
 
 const ProductCard = ({ title, imageSrc }) => {
   return (
-    <div className="w-full max-w-[1140px] md:w-1/4 px-[20px] md:px-[10px] h-auto md:h-[250px] ">
+    <div className="w-full max-w-[1140px] md:w-1/4 px-[20px] md:px-[10px] h-auto md:h-[250px] md:my-6 ">
       <div className="rounded-lg p-6">
         <img src={imageSrc} alt="Product" className=" w-full md:h-[180px] h-[200px] sm:h-[320px] mb-4 rounded-md" />
         <h3 className="text-xl font-semibold mb-2 text-themeBlue">{title}</h3>

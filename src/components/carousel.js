@@ -42,7 +42,6 @@ export default function Slider() {
     { name: "RAK Pharmaceuticals Ltd", image: "/img/customers/rak.png" },
     { name: "Renata Limited", image: "/img/customers/renata.jpeg" },
     { name: "Sanofi Aventis Bangladesh Ltd", image: "/img/customers/sanofi.png" },
-    { name: "Somatec Pharmaceuticals Ltd", image: "/img/customers/somatec.png" },
     { name: "Sharif Pharmaceuticals Limited", image: "/img/customers/sharif.jpeg" },
     { name: "SQUARE Pharmaceuticals Limited", image: "/img/customers/square.png" },
     { name: "Techno Drugs Limited", image: "/img/customers/techno.png" },

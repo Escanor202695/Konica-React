@@ -8,7 +8,8 @@ function About(props) {
       </h2>
       <div className="max-w-[1140px] mx-auto  flex flex-col-reverse md:flex-row ">
         <div className="w-full md:w-1/2 lg:pr-[0px] px-[20px] md:pl-0 mt-[50px] md:mt-0 ">
-          <img className="w-auto h-full rounded-md" src="/img/about2.png" alt="about_us" />
+          <img className="w-auto h-full rounded-md" src="/img/about2.jpg" alt="about_us" data-aos="fade-right"
+          data-aos-duration="750"/>
         </div>
         <div className="w-full md:w-1/2 lg:ml-[30px] flex-col px-[20px]">
           <p className="mb-[30px] mt-[10px] md:mt-0">
