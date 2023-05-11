@@ -66,25 +66,23 @@ function Raw() {
         </div>
       </div>
       {/**raw-material */}
-      <div className="w-screen py-[60px] md:py-[120px]" id="about">
+      <div className="w-screen py-[60px] md:pt-[120px] md:pb-[60px] " id="about">
         <h2 className="text-[3rem] font-semibold text-themeBlue text-center mb-[50px] ">
           <span className="line">Packaging</span>
         </h2>
         <div className="max-w-[70rem] mx-auto  flex flex-col-reverse md:flex-row ">
           <div className="w-full  lg:ml-[30px] flex-col px-[20px]">
-            <p className="mb-[30px] mt-[10px] md:mt-0 text-center">
+            <p className="mb-[30px] mt-[10px] md:mt-0 ">
               <span className="font-semibold text-themeGreen">
-                Konica Corporation Limited
+              Packaging
               </span>{" "}
-              believes that we are successful only when our customer and
-              suppliers are successful. We will realize this mission by setting
-              the highest standards in service. ASN’s sales team is fully
-              conversant with the related industries. The team is capable to
-              understand customers’ requirement and offer the best possible
-              solution by ensuring quality and service
+              is the technology of enclosing or protecting products for distribution, storage, sale and use. Packaging also refers to the process of design, evaluation and production of packages. Packaging can be described as a coordinated system of preparing goods for transport, warehousing, logistics, sale and end use.
               <br /> <br />
             </p>
-            <div className="flex flex-wrap mx-auto justify-start">
+            <span className="font-semibold text-themeGreen">
+            Konica can offer the following items for packaging :
+            </span>
+            <div className="flex flex-wrap mx-auto justify-start mt-6 pl-3" >
               {products.map((item, index) => (
                 <div
                   key={index}

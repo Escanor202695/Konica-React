@@ -43,15 +43,31 @@ function Footer({ home = false }) {
             <p className="flex gap-2 my-4 items-center">
               <HiOutlineMail className="text-themeGreen text-[22px]" />
               <span className="text-themeWhite">
-                info@konicacorporation.com
+                <div>
+                  <p className=" mb-0">
+                    <a href="mailto:info@konicacorporation.com">
+                      info@konicacorporation.com
+                    </a>
+                  </p>
+                  <p className=" mb-0">
+                    <a href="mailto:konicacorporationd@gmail.com">
+                      konicacorporationd@gmail.com
+                    </a>
+                  </p>
+                </div>
               </span>
             </p>
             <p className="flex gap-2 my-4">
-              <LocalPhoneIcon className="text-themeGreen text-[20px]" />
-              <span className="text-themeWhite">
-                +88-01716 161730
-                <br /> +88-01715 617463
-              </span>
+              <LocalPhoneIcon className="text-themeGreen text-[22px]" />
+              <div>
+                <a href="tel:+8801716161730" className="text-themeWhite">
+                  +88-01716 161730
+                </a>
+                <br />
+                <a href="tel:+8801715617463" className="text-themeWhite">
+                  +88-01715 617463
+                </a>
+              </div>
             </p>
             <p className="flex gap-2 my-4">
               <HiOutlineLocationMarker className="text-themeGreen text-[20px]" />

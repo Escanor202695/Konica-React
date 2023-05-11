@@ -230,12 +230,7 @@ function Raw() {
               <span className="font-semibold text-themeGreen">
                 Konica Corporation Limited
               </span>{" "}
-              believes that we are successful only when our customer and
-              suppliers are successful. We will realize this mission by setting
-              the highest standards in service. Konica’s sales team is fully
-              conversant with the related industries. The team is capable to
-              understand customers’ requirement and offer the best possible
-              solution by ensuring quality and service
+               has accumulated the skills and resources necessary to offer solutions in all aspect of the setup and upkeep of machinery and projects throughout the course of its many years of service to the pharmaceutical and food industries. Here is a quick segmentation of the work we've done. Please contact us if you need further details...
               <br /> <br />
               <div className="py-10">
                 <span className="font-semibold text-themeGreen text-xl">
@@ -244,17 +239,13 @@ function Raw() {
                 <ProductCategory arrayCategory={arrayCategory} />
               </div>
               <p className="py-3">
-                We provide all kinds of Production, Process and Various
-                Packaging Machinery from our reputed sources from Europe, USA
-                and Asia.
+              We offer all varieties of production, process, and packaging machinery from our reliable sources in Europe, the United States, and Asia.
                 <br />
                 <br />
                 Pharma Water Systems
                 <br />
                 <br />
-                We provides solutions for Drinking Water, Purified Water (USP)
-                and Water for Injection (USPWFI). Our Scope of Supply includes
-                complete generation, storage and distributions systems.
+                We offer solutions for drinking water, USP-certified purified water, and USP-certified water for injection. Complete generation, storage, and distribution systems are part of our scope of supply.
               </p>
               <div className="py-10">
                 <span className="font-semibold text-themeGreen text-xl">

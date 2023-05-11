@@ -341,13 +341,13 @@ function Raw() {
         </h2>
         <div className="max-w-[70rem] mx-auto  flex flex-col-reverse md:flex-row ">
           <div className="w-full  lg:ml-[30px] flex-col px-[20px]">
-            <p className="mb-[30px] mt-[10px] md:mt-0 text-center">
+            <p className="mb-[30px] mt-[10px] md:mt-0 ">
               <span className="font-semibold text-themeGreen">
                 Konica Corporation Limited
               </span>{" "}
               believes that we are successful only when our customer and
               suppliers are successful. We will realize this mission by setting
-              the highest standards in service. ASN’s sales team is fully
+              the highest standards in service. Konica’s team is fully
               conversant with the related industries. The team is capable to
               understand customers’ requirement and offer the best possible
               solution by ensuring quality and service
