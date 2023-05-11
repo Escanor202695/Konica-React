@@ -60,13 +60,14 @@ function Raw() {
     {
       title: "Powder & Liquid Section",
       items: [
-        "Automatic Injectable Dry powder Filline Line",
-        "Automatic Injectable Liquid Filling Line",
+        
         "Automatic Ampoule Filling Line",
-        "Automatic Dry Syrup Powder Filling Line",
         "Bottle Filling Line (Powder & Liquid)",
         "Tube Filling & Sealing Machine",
         "Bottle Washing Machine",
+        "Automatic Dry Syrup Powder Filling Line",
+        "Automatic Injectable Liquid Filling Line",
+        "Automatic Injectable Dry powder Filline Line",
       ],
     },
     {
@@ -74,10 +75,10 @@ function Raw() {
       items: [
         "Automatic Sticker Labelling Machine",
         "Hologram Sticker Labelling Machine",
-        "Automatic Blister Packaging Machine with Cartoning Line",
         "Sachet Packaging Machine",
         "Strip Packaging Machine",
         "Label Printing Machine",
+        "Automatic Blister Packaging Machine with Cartoning Line",
       ],
     },
     {
@@ -92,13 +93,13 @@ function Raw() {
         "DCB",
         "V-Blender",
         "Shifter",
-        "Manufacturing Vessel with Magnetic Mixer",
-        "Cream/Ointment/Gel Manufacturing Vessel",
         "Storage Vessel",
         "Agitated Nutsche Filter Dryer (ANFD)",
         "Stainless Steel Industrial Reactor vessel",
         "Boiler",
         "Autoclave Machine",
+        "Manufacturing Vessel with Magnetic Mixer",
+        "Cream/Ointment/Gel Manufacturing Vessel",
       ],
     },
   ];
@@ -138,7 +139,6 @@ function Raw() {
         'Hot Tack Tester',
         'Portable Heat Seal Strength Tester',
         'Coefficient of Friction Tester',
-        'Inclined Surface Coefficient of Friction Tester',
         'Friction & Peel Tester',
         'Thickness Tester',
         'Tear Tester',
@@ -149,7 +149,8 @@ function Raw() {
         'Leak and Seal Strength Tester',
         'Flex Durability Tester',
         'Adhesive Tester',
-        'Ink Rub Tester'
+        'Ink Rub Tester',
+        'Inclined Surface Coefficient of Friction Tester',
       ]
     },
     {
@@ -240,7 +241,7 @@ function Raw() {
               </span>{" "}
               believes that we are successful only when our customer and
               suppliers are successful. We will realize this mission by setting
-              the highest standards in service. ASN’s sales team is fully
+              the highest standards in service. Konica’s sales team is fully
               conversant with the related industries. The team is capable to
               understand customers’ requirement and offer the best possible
               solution by ensuring quality and service

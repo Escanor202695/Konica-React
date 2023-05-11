@@ -169,9 +169,6 @@ function ProductCategory() {
         "(R)-2-methyl-CBS-oxazaborolidine",
         "(S)-(-)-2-Methyl-2-propanesulfinamide",
         "(S)-2-methyl-CBS-oxazaborolidine",
-        "2-Isopropenyl-4,4,5,5-tetramethyl-1,3,2-dioxaborolane (Isopropenylboronic acid pinacol ester)",
-        "3,6-Dihydro-2H-pyridine-1-N-Boc-4-boronic acid pinacol ester",
-        "4-(4,4,5,5-Tetramethyl-1,3,2-dioxaborolan-2-yl)aniline(4-Aminophenylboronic acid pinacol ester)",
         "Bis (pinacolato) diboron",
         "Bis(neopentyl glycolato)diboron",
         "Cyclopropylboronic acid",
@@ -180,7 +177,10 @@ function ProductCategory() {
         "Potassium vinyltrifluoroborate",
         "Potassium(bromomethyl)trifluoroborate",
         "Sodium-2-Ethyl Hexanoate",
-        "Tetrahydroxydiboron"
+        "Tetrahydroxydiboron",
+        "2-Isopropenyl-4,4,5,5-tetramethyl-1,3,2-dioxaborolane (Isopropenylboronic acid pinacol ester)",
+        "3,6-Dihydro-2H-pyridine-1-N-Boc-4-boronic acid pinacol ester",
+        "4-(4,4,5,5-Tetramethyl-1,3,2-dioxaborolan-2-yl)aniline(4-Aminophenylboronic acid pinacol ester)",
       ]
       
     },
