@@ -24,7 +24,7 @@ function Hero(props) {
           <img
             src="/img/hero3.jpg"
             alt="heroImage"
-            className="w-full md:w-[30rem] rounded-md h-auto md:h-[20rem] mt-6 md:mt-0 "
+            className="w-full md:w-[30rem] rounded-md h-auto mt-6 md:mt-0 "
             data-aos="fade-left"
             data-aos-duration="750"
           />
