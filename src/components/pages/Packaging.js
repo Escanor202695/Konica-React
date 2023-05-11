@@ -1,61 +1,42 @@
-import React from "react";
+import React,{useEffect} from "react";
 import Footer from "../Footer";
 import Contact from "../Contact";
 import ServiceHeader from "./ServiceHeader";
 import CheckIcon from '@mui/icons-material/Check';
 
 const products = [
-  "product1",
-  "product1",
-  "product1",
-  "product1",
-  "product1",
-  "product1",
-  "product1",
-  "product1",
-  "product1",
-  "product1",
-  "product1",
-  "product1",
-  "product1",
-  "product1",
-  "product1",
-  "product1",
-  "product1",
-  "product1",
-  "product1",
-  "product1",
-  "product1",
-  "product1",
-  "product1",
-  "product1",
-  "product1",
-  "product1",
-  "product1",
-  "product1",
-  "product1",
-  "product1",
-  "product1",
-  "product1",
-  "product1",
-  "product1",
-  "product1",
-  "product1",
-  "product1",
-  "product1",
-  "product1",
-  "product1",
-  "product1",
-  "product1",
-  "product1",
-  "product1",
-  "product1",
-  "product1",
-  "product1",
-  "product1",
+  'Aluminium Foil',
+  'PVC/ PVDC Film',
+  'Sachet Foil',
+  'Spray Pump',
+  'Applicator',
+  'Roll On (Plastic/Glass)',
+  'Ophthalmic Components',
+  'Nasal Components',
+  'Actuator',
+  'Aluminium Can',
+  'Metering Valve',
+  'MDI (Metered Dose Inhaler) Device',
+  'DPI (Dry Powder Inhaler) Device',
+  'Plastic Bottle (Shampoo/Cream)',
+  'Plastic Container (Tablet/Capsule)',
+  'Effervescent Tube (Printed/Unprinted)',
+  'Rubber Stopper',
+  'Flip of Seal',
+  'Infusion Bottle (Glass/Plastic)',
+  'Glass Vial',
+  'Insulin Vial',
+  'Lyophilized Vial',
+  'IV Infusion Bag',
+  'Syringe',
+  'Prefilled Syringe & Cartridge'
 ];
 
+
 function Raw() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <ServiceHeader />
@@ -103,11 +84,11 @@ function Raw() {
               solution by ensuring quality and service
               <br /> <br />
             </p>
-            <div className="flex flex-wrap mx-auto justify-center">
+            <div className="flex flex-wrap mx-auto justify-start">
               {products.map((item, index) => (
                 <div
                   key={index}
-                  className="min-w-[30%] pt-4 px-4 text-black overflow-hidden text-md capitalize"
+                  className="min-w-[80%] md:min-w-[45%] pt-4 px-4 text-black overflow-hidden text-md capitalize"
                 >
                   <CheckIcon className="text-themeGreen font-medium mr-2"/>{item}
                 </div>

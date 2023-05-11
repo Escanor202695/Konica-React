@@ -10,14 +10,17 @@ const ServiceCard = ({ title, description, imageSrc, link }) => {
           <img
             src={imageSrc}
             alt="Service"
-            className="w-full h-auto rounded-md md:rounded-none"
+            className="w-full md:h-[250px] h-[250px] rounded-md md:rounded-none"
           />
           <div className="py-4 lg:p-4">
             <h3 className="text-xl font-semibold mb-2 text-themeBlue">{title}</h3>
             <p className="text-gray-700 mb-4">{description}</p>
-            <button className="mt-2 bg-themeBlue border-2 border-themeBlue hover:border-themeGreen text-white font-bold py-1 px-5 rounded">
+            <Link to={link}>
+            <button className="mt-2 bg-themeBlue border-2 border-themeBlue hover:border-themeGreen text-white font-bold py-1 px-5 rounded hover:text-xl ">
               Details
             </button>
+          </Link>
+          
           </div>
         </Link>
       </div>
@@ -31,21 +34,21 @@ const Services = () => {
       title: "Raw Material",
       description:
         "ASN Corporation believes that we are successful only when our customer and suppliers are successful. We will realize this mission",
-      imageSrc: "/img/about.jpg",
+      imageSrc: "/img/services/raw.jpeg",
       link: "/raw-material", // Add the desired link for the service
     },
     {
       title: "Packaging Material",
       description:
         "Packaging is the technology of enclosing or protecting products for distribution, storage, sale, and use. Packaging also refers to the process of",
-      imageSrc: "/img/about.jpg",
+      imageSrc: "/img/services/package.webp",
       link: "/packaging-material", // Add the desired link for the service
     },
     {
       title: "Machinery",
       description:
         "Through many years of being in Service for Pharmaceutical and Food Industry, ASN has acquired good experience and resources to provide a solution in every respect",
-      imageSrc: "/img/about.jpg",
+      imageSrc: "/img/services/machine.jpeg",
       link: "/machinery", // Add the desired link for the service
     },
   ];
@@ -56,7 +59,7 @@ const Services = () => {
       <h2 className="text-[3rem] font-semibold text-themeBlue md:text-themeWhite text-center mb-[50px]">
         <span className="line">Services</span>
       </h2>
-      <div className="max-w-[1140px] flex flex-wrap items-center justify-between mx-auto">
+      <div className="max-w-[1140px] flex flex-wrap items-center justify-between mx-auto  ">
       {services.map((service, index) => (
         <ServiceCard
           key={index}

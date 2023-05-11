@@ -10,11 +10,10 @@ const ServiceHeader = () => {
     setIsOpen(!isOpen);
   };
 
-  const menu = [
-    {
-      title: "contact",
-    },
-  ];
+  const menu = [ 
+      { title: "Home", link: "/" },
+      { title: "Contact" },];
+
 
   return (
     <div className="absolute top-0 left-0 w-screen bg-transparent z-50">
@@ -37,18 +36,15 @@ const ServiceHeader = () => {
         </div>
         <div className="hidden md:flex items-center">
           <nav className="hidden md:flex space-x-8 font-semibold ml-8 mr-6">
-            {menu.map((item, idx) => (
-              <ScrollIntoView
-                selector={`#${item.title}`}
-                smooth={true}
-                duration={500}
-                key={idx}
-              >
-                <p className="text-themeWhite hover:text-themeGreen capitalize cursor-pointer menuLine">
-                  {item.title !== "contact" && item.title}
-                </p>
-              </ScrollIntoView>
-            ))}
+            
+             
+          <Link to="/">
+          <p className="text-themeWhite hover:text-themeGreen capitalize cursor-pointer menuLine">
+            Home
+          </p>
+        </Link>
+              
+          
           </nav>
           <ScrollIntoView selector="#contact" smooth={true} duration={500}>
             <button className="px-4 py-2 rounded-md text-white bg-themeGreen hover:bg-themeDarkBlue">

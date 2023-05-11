@@ -10,14 +10,6 @@ const AboutHeader = () => {
     setIsOpen(!isOpen);
   };
 
-  const menu = [
-    {
-      title: "about us",
-    },
-    {
-      title: "contact",
-    },
-  ];
 
   return (
     <div className="absolute top-0 left-0 w-screen bg-transparent z-50">
@@ -40,18 +32,11 @@ const AboutHeader = () => {
         </div>
         <div className="hidden md:flex items-center">
           <nav className="hidden md:flex space-x-8 font-semibold ml-8 mr-6">
-            {menu.map((item, idx) => (
-              <ScrollIntoView
-                selector={`#${item.title}`}
-                smooth={true}
-                duration={500}
-                key={idx}
-              >
-                <p className="text-themeWhite hover:text-themeGreen capitalize cursor-pointer menuLine">
-                  {item.title !== "contact" && item.title}
-                </p>
-              </ScrollIntoView>
-            ))}
+          <Link to="/">
+          <p className="text-themeWhite hover:text-themeGreen capitalize cursor-pointer menuLine">
+            Home
+          </p>
+        </Link>
           </nav>
           <ScrollIntoView selector="#contact" smooth={true} duration={500}>
             <button className="px-4 py-2 rounded-md text-white bg-themeGreen hover:bg-themeDarkBlue">
@@ -74,18 +59,11 @@ const AboutHeader = () => {
           } md:hidden absolute top-6 right-2 h-auto w-[10rem] bg-gray-100`}
         >
           <nav className="px-6 space-y-4 py-8">
-            {menu.map((item, idx) => (
-              <ScrollIntoView
-                selector={`#${item.title}`}
-                smooth={true}
-                duration={500}
-                key={idx}
-              >
-                <p className="text-themeBlue hover:text-themeGreen capitalize cursor-pointer">
-                  {item.title}
-                </p>
-              </ScrollIntoView>
-            ))}
+          <Link to="/">
+          <p className="text-themeWhite hover:text-themeGreen capitalize cursor-pointer menuLine">
+            Home
+          </p>
+        </Link>
           </nav>
         </div>
       </div>
