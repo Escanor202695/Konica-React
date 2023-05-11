@@ -52,12 +52,7 @@ const Services = () => {
   
   return (
     <div className=" py-[60px] md:py-[120px] w-screen relative" id="services">
-      <div className="absolute top-0 left-0 w-full h-full  md:bg-gradient-to-tr from-black to-themeBlue -z-10 opacity-90"></div>
-      <img
-        src="/img/about.jpg"
-        alt="heroImage"
-        className="hidden md:block w-full h-full absolute top-0 left-0 -z-20"
-      />
+      <div className="absolute top-0 left-0 w-full h-full  md:bg-gradient-to-t from-black to-themeBlue -z-10"></div>
       <h2 className="text-[3rem] font-semibold text-themeBlue md:text-themeWhite text-center mb-[50px]">
         <span className="line">Services</span>
       </h2>

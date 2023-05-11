@@ -3,10 +3,8 @@ import Footer from "../Footer";
 import Contact from "../Contact";
 import ServiceHeader from "./ServiceHeader";
 import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
+import CheckIcon from "@mui/icons-material/Check";
 import { useState } from "react";
-
-import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
-
 function ProductCategory() {
   const [activeIndex, setActiveIndex] = useState(null);
 
