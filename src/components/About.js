@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 function About(props) {
   return (
     <div className="w-screen py-[60px] md:py-[120px]" id="about">
@@ -7,11 +7,16 @@ function About(props) {
         <span className="line">About Us</span>
       </h2>
       <div className="max-w-[1140px] mx-auto  flex flex-col-reverse md:flex-row ">
-        <div className="w-full md:w-1/2 lg:pr-[0px] px-[20px] md:pl-0 mt-[50px] md:mt-0 ">
-          <img className="w-auto h-full rounded-md" src="/img/about2.jpg" alt="about_us" data-aos="fade-right"
-          data-aos-duration="750"/>
+        <div className="w-full md:w-1/2 flex lg:pr-[0px] px-[20px] md:pl-0 mt-[50px] md:mt-0 ">
+          <img
+            className="w-auto h-[90%] mx-auto rounded-md"
+            src="/img/about2.jpg"
+            alt="about_us"
+            data-aos="fade-right"
+            data-aos-duration="750"
+          />
         </div>
-        <div className="w-full md:w-1/2 lg:ml-[30px] flex-col px-[20px]">
+        <div className="w-full md:w-1/2 lg:ml-[30px] flex-col px-[20px] md:py-4">
           <p className="mb-[30px] mt-[10px] md:mt-0">
             <span className="font-semibold text-themeGreen">
               Konica Corporation Limited
@@ -28,10 +33,10 @@ function About(props) {
             quality products timely delivery and commercially feasible pricing.
           </p>
           <Link to="/about">
-          <button className="text-themeWhite px-[16px] py-[6px] rounded-md bg-themeBlue border-2 border-themeBlue hover:border-themeGreen">
-            Know More
-          </button>
-        </Link>
+            <button className="text-themeWhite px-[16px] py-[6px] rounded-md bg-themeBlue border-2 border-themeBlue hover:border-themeGreen">
+              Know More
+            </button>
+          </Link>
         </div>
       </div>
     </div>
