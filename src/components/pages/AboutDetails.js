@@ -1,10 +1,13 @@
-    import React from "react";
+    import React, { useEffect } from "react";
     import Footer from "../Footer";
     import Header from "./AboutHeader";
     import Hero from "../Hero";
     import ScrollIntoView from "react-scroll-into-view";
     import Contact from "../Contact"
-    function aboutDetails() {
+    function AboutDetails() {
+        useEffect(() => {
+            window.scrollTo(0, 0);
+          }, []);
     return (
         <>
         <Header />
@@ -131,4 +134,4 @@
     );
     }
 
-    export default aboutDetails;
+    export default AboutDetails;
