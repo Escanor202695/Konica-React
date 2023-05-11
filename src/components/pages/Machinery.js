@@ -2,17 +2,15 @@ import React, { useEffect } from "react";
 import Footer from "../Footer";
 import Contact from "../Contact";
 import ServiceHeader from "./ServiceHeader";
-import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
+import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
 import CheckIcon from "@mui/icons-material/Check";
 import { useState } from "react";
 
-
-function ProductCategory({arrayCategory}) {
+function ProductCategory({ arrayCategory }) {
   const [activeIndex, setActiveIndex] = useState(null);
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-
 
   return (
     <div className="bg-lightGray">
@@ -40,8 +38,9 @@ function ProductCategory({arrayCategory}) {
                 >
                   <ul className="pb-[20px] flex flex-wrap ">
                     {item.items.map((i, idx) => (
-                      <li className="text-md text-gray-700 py-[6px] mb-0 md:ml-4 list-disc min-w-[30%] ">
-                        {i}
+                        
+                      <li className="text-md text-gray-700 py-[6px] mb-0 md:ml-4 min-w-[45%] ">
+                        <CheckIcon className="text-themeGreen"/>{i}
                       </li>
                     ))}
                   </ul>
@@ -102,105 +101,97 @@ function Raw() {
       ],
     },
   ];
-  
+
   const arrayCategory1 = [
     {
-      title: 'Standards',
-      items: [
-        'ISO',
-        'ASTM',
-        'TAPPI'
-      ]
+      title: "Standards",
+      items: ["ISO", "ASTM", "TAPPI"],
     },
     {
-      title: 'Gas & Moisture Testing',
+      title: "Gas & Moisture Testing",
       items: [
-        'Oxygen Transmission Rate Test System',
-        'Oxygen Permeability Tester',
-        'Water Vapor Transmission Rate Test System',
-        'Water Vapor Transmission Rate Tester',
-        'Water Vapor Permeability Tester',
-        'Gas Permeability Tester',
-        'Container Gas Permeability Tester',
-        'Evaporation Residue Constant Weight Tester'
-      ]
+        "Oxygen Transmission Rate Test System",
+        "Oxygen Permeability Tester",
+        "Water Vapor Transmission Rate Test System",
+        "Water Vapor Transmission Rate Tester",
+        "Water Vapor Permeability Tester",
+        "Gas Permeability Tester",
+        "Container Gas Permeability Tester",
+        "Evaporation Residue Constant Weight Tester",
+      ],
     },
     {
-      title: 'Mechanical Testing',
+      title: "Mechanical Testing",
       items: [
-        'Auto Tensile Tester',
-        'Auto Stripping Tester',
-        'Adhesive Tensile & Shear Tester',
-        'Box Compression Tester',
-        'Digital Torque Tester',
-        'Heat Seal Tester',
-        'Gradient Heat Seal Tester',
-        'Hot Tack Tester',
-        'Portable Heat Seal Strength Tester',
-        'Coefficient of Friction Tester',
-        'Inclined Surface Coefficient of Friction Tester',
-        'Friction & Peel Tester',
-        'Thickness Tester',
-        'Tear Tester',
-        'Falling Dart Impact Tester',
-        'Pendulum Impact Tester',
-        'Film Free Shrink Tester',
-        'Film Thermal Shrinkage Tester',
-        'Leak and Seal Strength Tester',
-        'Flex Durability Tester',
-        'Adhesive Tester',
-        'Ink Rub Tester'
-      ]
+        "Auto Tensile Tester",
+        "Auto Stripping Tester",
+        "Adhesive Tensile & Shear Tester",
+        "Box Compression Tester",
+        "Digital Torque Tester",
+        "Heat Seal Tester",
+        "Gradient Heat Seal Tester",
+        "Hot Tack Tester",
+        "Portable Heat Seal Strength Tester",
+        "Coefficient of Friction Tester",
+        "Inclined Surface Coefficient of Friction Tester",
+        "Friction & Peel Tester",
+        "Thickness Tester",
+        "Tear Tester",
+        "Falling Dart Impact Tester",
+        "Pendulum Impact Tester",
+        "Film Free Shrink Tester",
+        "Film Thermal Shrinkage Tester",
+        "Leak and Seal Strength Tester",
+        "Flex Durability Tester",
+        "Adhesive Tester",
+        "Ink Rub Tester",
+      ],
     },
     {
-      title: 'Gas Chromatography',
-      items: [
-        'Gas Chromatograph with Autosampler'
-      ]
+      title: "Gas Chromatography",
+      items: ["Gas Chromatograph with Autosampler"],
     },
     {
-      title: 'Packaging Analysis',
+      title: "Packaging Analysis",
       items: [
-        'Headspace Gas Analyzer',
-        'Package Headspace Analyzer',
-        'Vacuum Packaging Analyzer'
-      ]
+        "Headspace Gas Analyzer",
+        "Package Headspace Analyzer",
+        "Vacuum Packaging Analyzer",
+      ],
     },
     {
-      title: 'Air Permeability Testing',
-      items: [
-        'Air Permeability Tester'
-      ]
-    }
+      title: "Air Permeability Testing",
+      items: ["Air Permeability Tester"],
+    },
   ];
   const arrayCategory3 = [
     {
-      title: 'Laboratory Equipment',
+      title: "Laboratory Equipment",
       items: [
-        'pH Meter',
-        'Tablet Hardness Tester',
-        'Tablet Friability Tester',
-        'Disintegration Tester',
-        'Dissolution Tester',
-        'Desiccator Cabinet',
-        'Tapped Density Tester',
-        'HPLC',
-        'Vortex Mixer',
-        'Sampling Booth',
-        'Dispensing Booth',
-        'Laminar Air Flow',
-        'Static & Dynamic Pass Box',
-        'UV Cabinet',
-        'Dosage Unit Sampling Apparatus (DUSA)',
-        'Waste Shot Collector WSC2',
-        'Andersen Cascade Impactor (ACI)',
-        'Glass Twin Impinger',
-        'Inhaler Testing Data Analysis Software',
-        'Mouthpiece Adapters'
-      ]
-    }
+        "pH Meter",
+        "Tablet Hardness Tester",
+        "Tablet Friability Tester",
+        "Disintegration Tester",
+        "Dissolution Tester",
+        "Desiccator Cabinet",
+        "Tapped Density Tester",
+        "HPLC",
+        "Vortex Mixer",
+        "Sampling Booth",
+        "Dispensing Booth",
+        "Laminar Air Flow",
+        "Static & Dynamic Pass Box",
+        "UV Cabinet",
+        "Dosage Unit Sampling Apparatus (DUSA)",
+        "Waste Shot Collector WSC2",
+        "Andersen Cascade Impactor (ACI)",
+        "Glass Twin Impinger",
+        "Inhaler Testing Data Analysis Software",
+        "Mouthpiece Adapters",
+      ],
+    },
   ];
-  
+
   return (
     <>
       <ServiceHeader />
@@ -208,7 +199,7 @@ function Raw() {
         <img
           src="/img/about.jpg"
           alt="heroImage"
-          className="w-full h-full absolute top-0 left-0 -z-20"
+          className="w-full h-full absolute top-0 left-0 -z-20 object-cover"
         />
         <div className="w-screen relative -z-10 bg-gradient-to-t from-black to-themeBlue opacity-90  md:px-0 ">
           <div className="max-w-[1140px] h-[400px] flex flex-col md:flex-row items-center justify-center md:justify-between  mx-auto w-full  px-[20px] md:px-0"></div>
@@ -245,10 +236,12 @@ function Raw() {
               understand customers’ requirement and offer the best possible
               solution by ensuring quality and service
               <br /> <br />
-              <span className="font-semibold text-themeGreen text-2xl">
-                Production, Process and Packaging Machinery
-              </span>{" "}
-              <ProductCategory  arrayCategory={arrayCategory}/>
+              <div className="py-10">
+                <span className="font-semibold text-themeGreen text-xl">
+                  Production, Process and Packaging Machinery
+                </span>{" "}
+                <ProductCategory arrayCategory={arrayCategory} />
+              </div>
               <p className="py-3">
                 We provide all kinds of Production, Process and Various
                 Packaging Machinery from our reputed sources from Europe, USA
@@ -262,22 +255,27 @@ function Raw() {
                 and Water for Injection (USPWFI). Our Scope of Supply includes
                 complete generation, storage and distributions systems.
               </p>
-              <span className="font-semibold text-themeGreen text-2xl">
-                Testing, Commissioning & Validation
-              </span>{" "}
-              <ProductCategory  arrayCategory={arrayCategory1}/>
+              <div className="py-10">
+                <span className="font-semibold text-themeGreen text-xl">
+                  Testing, Commissioning & Validation
+                </span>{" "}
+                <ProductCategory arrayCategory={arrayCategory1} />
+              </div>
               <p className="py-3">
                 We also undertakes Testing, Commissioning Validation and
                 Documentation Services for different systems necessary in a
                 project.
               </p>
-              <span className="font-semibold text-themeGreen text-2xl">
-                Laboratory Equipment and Furniture
-              </span>{" "}
-              <ProductCategory  arrayCategory={arrayCategory3}/>
+              <div className="py-10">
+                <span className="font-semibold text-themeGreen text-xl">
+                  Laboratory Equipment and Furniture
+                </span>{" "}
+                <ProductCategory arrayCategory={arrayCategory3} />
+              </div>
               <p className="py-3">
                 Most of the Necessary equipment for Laboratory Instruments,
-                Equipment and Analyzers are being supplied by ASN Corporation.
+                Equipment and Analyzers are being supplied by Konica
+                Corporation.
               </p>
             </p>
           </div>

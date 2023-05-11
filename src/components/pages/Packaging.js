@@ -44,7 +44,7 @@ function Raw() {
         <img
           src="/img/about.jpg"
           alt="heroImage"
-          className="w-full h-full absolute top-0 left-0 -z-20"
+          className="w-full h-full absolute top-0 left-0 -z-20 object-cover"
         />
         <div className="w-screen relative -z-10 bg-gradient-to-t from-black to-themeBlue opacity-90  md:px-0 ">
           <div className="max-w-[1140px] h-[400px] flex flex-col md:flex-row items-center justify-center md:justify-between  mx-auto w-full  px-[20px] md:px-0">

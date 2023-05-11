@@ -5,6 +5,8 @@ import AboutDetails from "./components/pages/AboutDetails";
 import Raw from "./components/pages/Raw";
 import Packaging from './components/pages/Packaging';
 import Machinery from './components/pages/Machinery';
+import { ToastContainer, toast } from "react-toastify";
+
 function App() {
   return (
     <>
@@ -17,6 +19,7 @@ function App() {
           <Route path="/raw-material" element={<Raw/>}/>
         </Routes>
       </BrowserRouter>
+      <ToastContainer />
     </>
   );
 }

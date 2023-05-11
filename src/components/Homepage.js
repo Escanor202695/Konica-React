@@ -20,7 +20,7 @@ function Homepage() {
       <Products/>
       <Clients/>
       <Contact/>
-      <Footer/>
+      <Footer home={true}/>
     </div>
   );
 }
