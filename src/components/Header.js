@@ -42,7 +42,7 @@ const Header = () => {
 
         </div>
         <div className="hidden md:flex items-center">
-          <nav className="hidden md:flex space-x-8 font-semibold ml-8 mr-6">
+          <nav className="hidden md:flex space-x-8 font-semibold">
             {menu.map((item, idx) => (
               <ScrollIntoView
                 selector={`#${item.title}`}

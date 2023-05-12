@@ -9,80 +9,78 @@ import CheckIcon from "@mui/icons-material/Check";
 
 import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 
-
-
 function ProductCategory() {
   const [activeIndex, setActiveIndex] = useState(null);
 
   const arrayCategory = [
     {
       name: "Active Pharmaceutical Ingredients (API)",
-      products : [
-        'Adenosine',
-        'Almotriptan Malate',
-        'Alogliptin Benzoate',
-        'Ambroxol HCl',
-        'Amlodipine Besilate BP/EP',
-        'Ammonium Lactate',
-        'Amoxicillin Sodium Sterile BP/EP/USP',
-        'Ampicillin Sodium + Sulbactam Sodium (2:1)',
-        'Apixaban',
-        'Aprepitant',
-        'Artesunate Sterile',
-        'Bendamustine HCl',
-        'Bisoprolol Fumarate',
-        'Brimonidine Tartrate',
-        'Bromhexine HCl BP',
-        'Calcium Carbonate Heavy BP',
-        'Calcium Chloride Dihydrate',
-        'Calcium Citrate USP',
-        'Calcium Gluconate',
-        'Calcium Lactate Gluconate',
-        'Calcium Lactate Pentahydrate',
-        'Canagliflozin Hemihydrate',
-        'Carmellose Sodium BP',
-        'Carvedilol',
-        'Cefepime HCl With Arginine Sterile USP',
-        'Cefotaxime Sodium Sterile USP',
-        'Ceftaroline Fosamil- Sterile Lyophilized',
-        'Ceftibuten Dihydrate Micronized USP',
-        'Ceftiofur Sodium USP',
-        'Ceftriaxon Sodium + Sulbactam Sodium (2:1)',
-        'Ceftriaxon Sodium + Tazobactam Sodium (8:1)',
-        'Cetirizine  Di Hydrochloride BP/EP',
-        'Chloramphenicol EP/BP',
-        'Choline Alfoscerate',
-        'Chondroitin Sulphate Sodium USP',
-        'Ciclesonide USP',
-        'Ciprofloxacin Hcl USP',
-        'Cloxacillin Sodium Sterile BP/USP/EP',
-        'Dapagliflozin',
-        'Dapagliflozin Propanediol Monohydrate',
-        'Dapoxetine HCl',
-        'Desloratadine',
-        'Desogestrel',
-        'D-Glucosamine HCl',
-        'Dicloxacillin Sodium Sterile',
-        'Diosmin Micronized',
-        'Dl – Methionine BP/EP',
-        'Docusate Sodium USP',
-        'Droitin Sulphate Sodium USP',
-        'Empagliflozin',
-        'Esomeprazole Sodium (Sterile) BP/EP/USP',
-        'Flucloxacillin Sodium Sterile BP/EP/USP',
-        'Fluconazole',
-        'Fluvastatin Sodium USP',
-        'Hesperidin',
-        'Ipragliflozin',
-        'Ipragliflozin L-Proline',
-        'Ipratropium Bromide',
-        'Iron (Ill) Hydroxide Polymaltose Complex',
-        'Iron Sucrose Solution',
-        'Ivabradine Hydrochloride',
-        'Ketoprofen USP (Injectable Grade)',
-        'Ketorolac TromethamineBP/EP/USP',
-        'L-Arginine Sterile',
-        'Ledipasvir',
+      products: [
+        "Adenosine",
+        "Almotriptan Malate",
+        "Alogliptin Benzoate",
+        "Ambroxol HCl",
+        "Amlodipine Besilate BP/EP",
+        "Ammonium Lactate",
+        "Amoxicillin Sodium Sterile BP/EP/USP",
+        "Ampicillin Sodium + Sulbactam Sodium (2:1)",
+        "Apixaban",
+        "Aprepitant",
+        "Artesunate Sterile",
+        "Bendamustine HCl",
+        "Bisoprolol Fumarate",
+        "Brimonidine Tartrate",
+        "Bromhexine HCl BP",
+        "Calcium Carbonate Heavy BP",
+        "Calcium Chloride Dihydrate",
+        "Calcium Citrate USP",
+        "Calcium Gluconate",
+        "Calcium Lactate Gluconate",
+        "Calcium Lactate Pentahydrate",
+        "Canagliflozin Hemihydrate",
+        "Carmellose Sodium BP",
+        "Carvedilol",
+        "Cefepime HCl With Arginine Sterile USP",
+        "Cefotaxime Sodium Sterile USP",
+        "Ceftaroline Fosamil- Sterile Lyophilized",
+        "Ceftibuten Dihydrate Micronized USP",
+        "Ceftiofur Sodium USP",
+        "Ceftriaxon Sodium + Sulbactam Sodium (2:1)",
+        "Ceftriaxon Sodium + Tazobactam Sodium (8:1)",
+        "Cetirizine  Di Hydrochloride BP/EP",
+        "Chloramphenicol EP/BP",
+        "Choline Alfoscerate",
+        "Chondroitin Sulphate Sodium USP",
+        "Ciclesonide USP",
+        "Ciprofloxacin Hcl USP",
+        "Cloxacillin Sodium Sterile BP/USP/EP",
+        "Dapagliflozin",
+        "Dapagliflozin Propanediol Monohydrate",
+        "Dapoxetine HCl",
+        "Desloratadine",
+        "Desogestrel",
+        "D-Glucosamine HCl",
+        "Dicloxacillin Sodium Sterile",
+        "Diosmin Micronized",
+        "Dl – Methionine BP/EP",
+        "Docusate Sodium USP",
+        "Droitin Sulphate Sodium USP",
+        "Empagliflozin",
+        "Esomeprazole Sodium (Sterile) BP/EP/USP",
+        "Flucloxacillin Sodium Sterile BP/EP/USP",
+        "Fluconazole",
+        "Fluvastatin Sodium USP",
+        "Hesperidin",
+        "Ipragliflozin",
+        "Ipragliflozin L-Proline",
+        "Ipratropium Bromide",
+        "Iron (Ill) Hydroxide Polymaltose Complex",
+        "Iron Sucrose Solution",
+        "Ivabradine Hydrochloride",
+        "Ketoprofen USP (Injectable Grade)",
+        "Ketorolac TromethamineBP/EP/USP",
+        "L-Arginine Sterile",
+        "Ledipasvir",
         "Ledipasvir Acetone Solvate",
         "Levocarnitine USP",
         "Levodopa",
@@ -153,12 +151,12 @@ function ProductCategory() {
         "Valsartan USP",
         "Vildagliptin",
         "Zinc Gluconate",
-        "Zoledronic Acid"
+        "Zoledronic Acid",
       ],
     },
     {
       name: "Intermediates",
-      products : [
+      products: [
         "6 APA",
         "(1R,2R)-2-Aminocyclohexanol",
         "(1R,2S)-cis-1-Amino-2-indanol",
@@ -181,12 +179,11 @@ function ProductCategory() {
         "2-Isopropenyl-4,4,5,5-tetramethyl-1,3,2-dioxaborolane (Isopropenylboronic acid pinacol ester)",
         "3,6-Dihydro-2H-pyridine-1-N-Boc-4-boronic acid pinacol ester",
         "4-(4,4,5,5-Tetramethyl-1,3,2-dioxaborolan-2-yl)aniline(4-Aminophenylboronic acid pinacol ester)",
-      ]
-      
+      ],
     },
     {
       name: "Excipients",
-      products : [
+      products: [
         "Cellulose",
         "Calcium Carboxy Methyl Cellulose",
         "Cross Carmellose Sodium USP",
@@ -200,12 +197,11 @@ function ProductCategory() {
         "Cod Liver Oil",
         "Croscarmellose Sodium",
         "Microcrystalline Cellulose – USP/BP/EP (Ph 101, 102, 200 Etc.)",
-      ]
-      
+      ],
     },
     {
       name: "Herbal Extracts",
-      products : [
+      products: [
         "Ginseng Extract",
         "Flax Seed Oil",
         "Evening Primrose Oil",
@@ -227,22 +223,20 @@ function ProductCategory() {
         "Garlic Oil",
         "Co-Enzyme Q 10",
         "Ashwagandha Extract 10%",
-        "Valerian Root Extract 0.8%"
-      ]
-      
+        "Valerian Root Extract 0.8%",
+      ],
     },
     {
       name: "Dairy Ingredients",
-      products : [
-        'Skimmed Milk Powder (SMP)',
-        'Full Cream Milk Powder (FCMP)',
-        'Cream Powder (CP)',
-        'Whey Protein Concentrate (WPC)',
-        'Lactose',
-        'Milk Protein Concentrate (MPC)',
-        'Milk Calcium (MC)'
-      ]
-      
+      products: [
+        "Skimmed Milk Powder (SMP)",
+        "Full Cream Milk Powder (FCMP)",
+        "Cream Powder (CP)",
+        "Whey Protein Concentrate (WPC)",
+        "Lactose",
+        "Milk Protein Concentrate (MPC)",
+        "Milk Calcium (MC)",
+      ],
     },
   ];
 
@@ -290,7 +284,7 @@ function ProductCategory() {
                   <ul className="pb-[20px] flex flex-wrap ">
                     {item.products.map((i, idx) => (
                       <li className="text-md text-gray-700 py-[6px] mb-0 md:ml-4 min-w-[80%] md:min-w-[45%] ">
-                        <CheckIcon className="mr-2 text-themeGreen"/>
+                        <CheckIcon className="mr-2 text-themeGreen" />
                         {i}
                       </li>
                     ))}

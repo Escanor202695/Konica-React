@@ -24,7 +24,7 @@ function About(props) {
             proposes its customers Pharmaceuticals Raw materials, Intermediates
             and Packaging Materials with high quality and dependability. We
             offer Pharmaceutical Raw Materials, Intermediates and Excipients
-            which comply with latest USP, BP and EP. <br /> <br />
+            which comply with latest USP, BP , EP and INN. <br /> <br />
             We offer packaging components from{" "}
             <span className="font-semibold text-themeGreen">
               USFDA approved manufacturers{" "}

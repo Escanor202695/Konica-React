@@ -55,7 +55,7 @@
                 proposes its customers Pharmaceuticals Raw materials,
                 Intermediates and Packaging Materials with high quality and
                 dependability. We offer Pharmaceutical Raw Materials,
-                Intermediates and Excipients which comply with latest USP, BP and
+                Intermediates and Excipients which comply with latest USP, BP, INN and
                 EP. <br /> <br />
                 We offer packaging components from{" "}
                 <span className="font-semibold text-themeGreen">
