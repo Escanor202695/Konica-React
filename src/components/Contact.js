@@ -68,7 +68,15 @@ const ContactForm = () => {
           </h3>
           <div className="flex items-center mb-4">
             <HiOutlineMail className="mr-2 text-themeGreen text-2xl" />
-            <p className="text-gray-600 mb-0">info@konicacorporation.com</p>
+            <div>
+            <p className="text-gray-600 mb-0">
+              <a href="mailto:info@konicacorporation.com">info@konicacorporation.com</a>
+            </p>
+            <p className="text-gray-600 mb-0">
+              <a href="mailto:konicacorporationd@gmail.com">konicacorporationd@gmail.com</a>
+            </p>
+          </div>
+          
           </div>
           <h3 className="text-xl font-semibold text-themeBlue mb-2">Phone</h3>
           <div className="flex items-center mb-4">
