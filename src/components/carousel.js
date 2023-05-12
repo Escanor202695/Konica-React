@@ -100,7 +100,7 @@ export default function Slider() {
       name: "Radiant Pharmaceuticals Limited",
       image: "/img/customers/radiant.png",
     },
-    { name:"Jenphar Pharmaceuticals Ltd", image: "/img/jenphar.jpeg" },
+    { name:"Jenphar Bangaldesh LTD", image: "/img/jenphar.jpeg" },
     { name: "Renata Limited", image: "/img/customers/renata.jpeg" },
     {
       name: "Sanofi Aventis Bangladesh Ltd",
