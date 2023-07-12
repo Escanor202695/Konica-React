@@ -6,7 +6,7 @@ function Clients(props) {
     <div className="py-[60px] md:py-[120px] relative" id="clients">
       <div className="absolute top-0 left-0 w-full h-full  bg-gradient-to-tr from-black to-themeBlue -z-10"></div>
       <img
-        src="/img/about.jpg"
+        src="/img/about.png"
         alt="heroImage"
         className="w-full h-full absolute top-0 left-0 -z-20"
       />

@@ -38,9 +38,9 @@ function ProductCategory({ arrayCategory }) {
                 >
                   <ul className="pb-[20px] flex flex-wrap ">
                     {item.items.map((i, idx) => (
-                        
                       <li className="text-md text-gray-700 py-[6px] mb-0 md:ml-4 min-w-[45%] ">
-                        <CheckIcon className="text-themeGreen"/>{i}
+                        <CheckIcon className="text-themeGreen" />
+                        {i}
                       </li>
                     ))}
                   </ul>
@@ -59,7 +59,6 @@ function Raw() {
     {
       title: "Powder & Liquid Section",
       items: [
-        
         "Automatic Ampoule Filling Line",
         "Bottle Filling Line (Powder & Liquid)",
         "Tube Filling & Sealing Machine",
@@ -124,29 +123,29 @@ function Raw() {
     {
       title: "Mechanical Testing",
       items: [
-        'Auto Tensile Tester',
-        'Auto Stripping Tester',
-        'Adhesive Tensile & Shear Tester',
-        'Box Compression Tester',
-        'Digital Torque Tester',
-        'Heat Seal Tester',
-        'Gradient Heat Seal Tester',
-        'Hot Tack Tester',
-        'Portable Heat Seal Strength Tester',
-        'Coefficient of Friction Tester',
-        'Friction & Peel Tester',
-        'Thickness Tester',
-        'Tear Tester',
-        'Falling Dart Impact Tester',
-        'Pendulum Impact Tester',
-        'Film Free Shrink Tester',
-        'Film Thermal Shrinkage Tester',
-        'Leak and Seal Strength Tester',
-        'Flex Durability Tester',
-        'Adhesive Tester',
-        'Ink Rub Tester',
-        'Inclined Surface Coefficient of Friction Tester',
-      ]
+        "Auto Tensile Tester",
+        "Auto Stripping Tester",
+        "Adhesive Tensile & Shear Tester",
+        "Box Compression Tester",
+        "Digital Torque Tester",
+        "Heat Seal Tester",
+        "Gradient Heat Seal Tester",
+        "Hot Tack Tester",
+        "Portable Heat Seal Strength Tester",
+        "Coefficient of Friction Tester",
+        "Friction & Peel Tester",
+        "Thickness Tester",
+        "Tear Tester",
+        "Falling Dart Impact Tester",
+        "Pendulum Impact Tester",
+        "Film Free Shrink Tester",
+        "Film Thermal Shrinkage Tester",
+        "Leak and Seal Strength Tester",
+        "Flex Durability Tester",
+        "Adhesive Tester",
+        "Ink Rub Tester",
+        "Inclined Surface Coefficient of Friction Tester",
+      ],
     },
     {
       title: "Gas Chromatography",
@@ -198,25 +197,12 @@ function Raw() {
       <ServiceHeader />
       <div className="relative z-40 ">
         <img
-          src="/img/about.jpg"
+          src="/img/about.png"
           alt="heroImage"
           className="w-full h-full absolute top-0 left-0 -z-20 object-cover"
         />
         <div className="w-screen relative -z-10 bg-gradient-to-t from-black to-themeBlue opacity-90  md:px-0 ">
           <div className="max-w-[1140px] h-[400px] flex flex-col md:flex-row items-center justify-center md:justify-between  mx-auto w-full  px-[20px] md:px-0"></div>
-        </div>
-        <div className="custom-shape-divider-bottom-1683382367">
-          <svg
-            data-name="Layer 1"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 1200 120"
-            preserveAspectRatio="none"
-          >
-            <path
-              d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
-              className="shape-fill"
-            ></path>
-          </svg>
         </div>
       </div>
       {/**raw-material */}
@@ -230,7 +216,12 @@ function Raw() {
               <span className="font-semibold text-themeGreen">
                 Konica Corporation Limited
               </span>{" "}
-               has accumulated the skills and resources necessary to offer solutions in all aspect of the setup and upkeep of machinery and projects throughout the course of its many years of service to the pharmaceutical and food industries. Here is a quick segmentation of the work we've done. Please contact us if you need further details...
+              has accumulated the skills and resources necessary to offer
+              solutions in all aspect of the setup and upkeep of machinery and
+              projects throughout the course of its many years of service to the
+              pharmaceutical and food industries. Here is a quick segmentation
+              of the work we've done. Please contact us if you need further
+              details...
               <br /> <br />
               <div className="py-10">
                 <span className="font-semibold text-themeGreen text-xl">
@@ -239,13 +230,18 @@ function Raw() {
                 <ProductCategory arrayCategory={arrayCategory} />
               </div>
               <p className="py-3">
-              We offer all varieties of production, process, and packaging machinery from our reliable sources in Europe, the United States, and Asia.
+                We offer all varieties of production, process, and packaging
+                machinery from our reliable sources in Europe, the United
+                States, and Asia.
                 <br />
                 <br />
                 Pharma Water Systems
                 <br />
                 <br />
-                We offer solutions for drinking water, USP-certified purified water, and USP-certified water for injection. Complete generation, storage, and distribution systems are part of our scope of supply.
+                We offer solutions for drinking water, USP-certified purified
+                water, and USP-certified water for injection. Complete
+                generation, storage, and distribution systems are part of our
+                scope of supply.
               </p>
               <div className="py-10">
                 <span className="font-semibold text-themeGreen text-xl">
