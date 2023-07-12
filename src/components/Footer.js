@@ -72,7 +72,7 @@ function Footer({ home = false }) {
             <p className="flex gap-2 my-4">
               <HiOutlineLocationMarker className="text-themeGreen text-[20px]" />
               <span className="text-themeWhite">
-                House-18, Road-4, Block-B, Ajmeribag <br />
+                Local Address: House-718, Road-4, Block-B, Ajmeribag <br />
                 Fatulla, Narayanganj-1400, Bangladesh
               </span>
             </p>

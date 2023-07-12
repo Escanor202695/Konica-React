@@ -15,7 +15,7 @@ const ContactForm = () => {
       console.log(inputs[i].value);
 
       if (!inputs[i].value) {
-        console.log('haha');
+        console.log("haha");
         return false;
       }
     }
@@ -69,14 +69,17 @@ const ContactForm = () => {
           <div className="flex items-center mb-4">
             <HiOutlineMail className="mr-2 text-themeGreen text-2xl" />
             <div>
-            <p className="text-gray-600 mb-0">
-              <a href="mailto:info@konicacorporation.com">info@konicacorporation.com</a>
-            </p>
-            <p className="text-gray-600 mb-0">
-              <a href="mailto:konicacorporationd@gmail.com">konicacorporationd@gmail.com</a>
-            </p>
-          </div>
-          
+              <p className="text-gray-600 mb-0">
+                <a href="mailto:info@konicacorporation.com">
+                  info@konicacorporation.com
+                </a>
+              </p>
+              <p className="text-gray-600 mb-0">
+                <a href="mailto:konicacorporationd@gmail.com">
+                  konicacorporationd@gmail.com
+                </a>
+              </p>
+            </div>
           </div>
           <h3 className="text-xl font-semibold text-themeBlue mb-2">Phone</h3>
           <div className="flex items-center mb-4">
@@ -91,7 +94,7 @@ const ContactForm = () => {
             <HiOutlineLocationMarker className="mr-2 text-themeGreen text-2xl" />
             <div>
               <p className="text-gray-600 mb-0 ">
-                House-18, Road-4, Block-B, Ajmeribag
+                Local Office: House-718, Road-4, Block-B, Ajmeribag
                 <br />
                 Fatulla, Narayanganj-1400, Bangladesh
               </p>
