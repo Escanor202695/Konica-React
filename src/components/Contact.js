@@ -90,16 +90,18 @@ const ContactForm = () => {
             </div>
           </div>
           <h3 className="text-xl font-semibold text-themeBlue mb-2">Address</h3>
-          <div className="flex items-center mb-4">
-            <HiOutlineLocationMarker className="mr-2 text-themeGreen text-2xl" />
-            <div>
-              <p className="text-gray-600 mb-0 ">
-                Local Office: House-718, Road-4, Block-B, Ajmeribag
-                <br />
-                Fatulla, Narayanganj-1400, Bangladesh
-              </p>
-            </div>
-          </div>
+          <p className="flex gap-2 my-4">
+              <HiOutlineLocationMarker className="text-themeGreen text-[20px]" />
+              <div className="flex flex-col gap-4">
+                <p className="text-themeBlue">
+                  Local Address: House-718, Road-4, Block-B, Ajmeribag <br />
+                  Fatulla, Narayanganj-1400
+                </p>
+                <p className="text-themeBlue">
+                  Head Office: Flat-2A, House-1017, Road-17, Adabor, Dhaka
+                </p>
+              </div>
+            </p>
         </div>
 
         <div className="w-full md:w-1/2 mx-auto">
